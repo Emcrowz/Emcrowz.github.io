@@ -8,11 +8,12 @@ body {
   font-family: sans-serif;
   font-size: 16px;
 }
-.temp-header {
+.temp-holder {
   text-align: center;
+}
+.temp-header {
   margin-bottom: 2rem;
 }
 .temp-para {
-  text-align: center;
   font-size: 1.25rem;
 }
