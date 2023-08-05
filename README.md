@@ -1,2 +1,3 @@
 # Emcrowz.github.io
-Right now it's a simple test of GitHub pages deployment. Will be a personal portfolio/project site. In due time.
+
+A personal portfolio amd GitHub pages deployment test. Slowly but surely it'll be transformed into full portfolio site.
