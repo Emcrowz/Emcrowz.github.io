@@ -1,18 +1,44 @@
+/* INIT */
 * {
   margin: 0;
   padding: 0;
 }
+/* Global state */
 html,
 body {
   font-family: sans-serif;
   font-size: 16px;
 }
-.temp-holder {
+
+li {
+  list-style: none;
+}
+
+/* Header part styles */
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav-list {
+  display: flex;
+}
+
+#lang-set-list {
+  display: flex;
+}
+/* Main part styles */
+#picture-about-holder {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer part styles */
+.footer-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#copyright {
   text-align: center;
-}
-.temp-header {
-  margin: 0 2rem;
-}
-.temp-para {
-  font-size: 1.25rem;
 }
