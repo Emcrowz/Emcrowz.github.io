@@ -33,6 +33,17 @@ header {
   justify-content: center;
 }
 
+/* Content a.k.a work and projects part styles */
+#work-and-projects {
+  display: flex;
+  justify-content: center;
+}
+#work-holder {
+}
+.work-proj-box {
+  display: flex;
+}
+
 /* Footer part styles */
 .footer-box {
   display: flex;
