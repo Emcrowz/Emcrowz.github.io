@@ -1,3 +1,5 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap"); */
+
 /* INIT */
 * {
   margin: 0;
@@ -8,8 +10,10 @@
 html,
 body {
   width: 100%;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+
+  --color-test: rgb(255, 55, 55);
 }
 
 h1 {
@@ -30,7 +34,7 @@ h3 {
 li {
   list-style: none;
 }
-li a {
+a {
   text-decoration: none;
 }
 
@@ -55,20 +59,40 @@ li a {
   display: flex;
   gap: 0.5em;
 }
+#language-set ul li span {
+  cursor: pointer;
+}
+
 /* Header part styles */
 
-/* Main part styles */
+/* About me part styles */
 #about {
   height: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+
   /* for visual representation */
   background-color: bisque;
 }
 
-#picture-about-holder {
-  display: flex;
-  justify-content: center;
+#profile-pic {
+  padding: 0.25em;
 }
 
+#profile-pic img {
+  height: auto;
+  width: auto;
+}
+#profile-desc h1 {
+  padding: 0.25em 0;
+  text-align: center;
+}
+#profile-desc p {
+  padding: 0.25em;
+}
+
+/* Skills part styles */
 #skills-holder {
   display: block;
   text-align: center;
@@ -102,7 +126,7 @@ li a {
 }
 
 /* Footer part styles */
-.footer-box {
+#footer-box {
   height: 25vh;
   /* for visual representation */
   background-color: rgb(139, 113, 80);
@@ -111,6 +135,16 @@ li a {
   justify-content: space-evenly;
 }
 
+#socials-box h3,
+#contacts-box h3 {
+  padding: 0.25em 0;
+}
+
 #copyright {
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
   text-align: center;
 }

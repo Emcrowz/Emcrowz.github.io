@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="/styles/style.css" />
   <title>Martynas Vrubliauskas | Portfolio</title>
+  <!-- This portfolio is designed to be simple, standalone, one-page site -->
 </head>
 
 <body>
@@ -22,8 +23,8 @@
     </div>
     <div id="language-set">
       <ul>
-        <li><a href="#" id="lng-en">EN</a></li>
-        <li><a href="#" id="lng-lt">LT</a></li>
+        <li><span id="lng-en">EN</span></li>
+        <li><span id="lng-lt">LT</span></li>
       </ul>
     </div>
   </nav>
@@ -32,21 +33,39 @@
   <header>
   </header>
 
-  <!-- Main part of the content -->
-  <main id="about">
-    <div id="picture-about-holder">
-      <div>
-        <img src="" alt="Picture of Martynas Vrubliauskas" />
-      </div>
-      <div>
-        <h1 class="heading-text">In due time...</h1>
-        <p class="about-me-text">
-          Here will be a portfolio or personal project site.
-        </p>
-      </div>
+  <!-- About me part -->
+  <section id="about">
+    <!-- Picture -->
+    <div id="profile-pic">
+      <img src="" alt="Picture of Martynas Vrubliauskas" />
     </div>
-  </main>
+    <!-- About me text -->
+    <div id="profile-desc">
+      <h1>Hello!</h1>
+      <p>
+        My name is Martynas Vrubliauskas (@emcrowz).</p>
+      <p>I finished studies at Vilnius University and got bachelor's
+        in Business Information Systems (2022) <del> and master's in Human Resource Management
+          (2024)</del>.</p>
+      <p>Over the years i had (and continue to have)
+        keen interest in web development. In school years learned the basics of web development and learned ins and
+        outs of CMS (Content Management Systems) such as Joomla, WordPress and PHP-Fusion, dabbled in PHP and made
+        realy basic designs and implementation to aforementioned CMS's.</p>
+      <p>After a while I enrolled in Vilnius
+        Coding School course 'Full-Stack web development' (2018) where i refreshed the knowledge i already had and
+        learned more in depth working with WordPress.</p>
+      <p>In 2023 I began to focus in web development completely - developing personal projects and learning as much as
+        i can in topics that pique my interests.</p>
+      <p>On a spare time i continue learning in various topics related to web development such as: diving deeper into
+        libraries such as ReactJS, node.js, React Native, Electron.<br />Regarding the Full-stack frames and work in
+        Full-Stack I aim to utilise and master Next.js framework.</p>
+      <p>Apart from web development I am also interested
+        in: video game development (Game
+        Design, Programming and Development), VR/AR development.</p>
+    </div>
+  </section>
 
+  <!-- Skills and experience part -->
   <section id="skills-and-experience">
     <div id="skills-holder">
       <h2>My skills and experience:</h2>
@@ -58,15 +77,23 @@
             <p>...</p>
           </div>
           <div class="skill">
-            <h4>ReactJS</h4>
+            <h4>ReactJS (Library)</h4>
             <p>...</p>
           </div>
           <div class="skill">
-            <h4>node.js</h4>
+            <h4>Node.js</h4>
             <p>...</p>
           </div>
           <div class="skill">
-            <h4>NextJS</h4>
+            <h4>React Native (Library)</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>Electron (Library)</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>Next.js (Framework)</h4>
             <p>...</p>
           </div>
         </div>
@@ -74,6 +101,10 @@
           <h3>Design:</h3>
           <div class="skill">
             <h4>HTML/CSS</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>Tailwind CSS (Library)</h4>
             <p>...</p>
           </div>
           <div class="skill">
@@ -107,7 +138,7 @@
             <p>University (Bachelor's & Master's)</p>
           </div>
           <div class="skill">
-            <h4>HRM</h4>
+            <h4>HRM (Human Resource Management)</h4>
             <p>University (Master's)</p>
           </div>
         </div>
@@ -189,16 +220,39 @@
 
   <!-- Footer part of the content -->
   <footer id="socials">
-    <div class="footer-box">
-      <div class="socials-box">
+    <div id="footer-box">
+      <!-- Socials -->
+      <div id="socials-box">
         <h3>Socials</h3>
+        <div class="social">
+          <span>GitHub</span>
+        </div>
+        <div class="social">
+          <span>LinkedIn</span>
+        </div>
+        <div class="social">
+          <span>Facebook</span>
+        </div>
       </div>
-      <div class="contacts-box">
+      <!-- Contacts -->
+      <div id="contacts-box">
         <h3>Contats</h3>
+        <div class="contact">
+          <span>Martynas.Vru@outlook.com</span>
+        </div>
+        <div class="contact">
+          <span>Martynas.Vru@gmail.com</span>
+        </div>
+        <div class="contact">
+          <span>emcrowz@outlook.com</span>
+        </div>
       </div>
     </div>
+    <!-- Copyright, to the top of page and Time -->
     <div id="copyright">
       <p>&copy; 2023 Martynas Vrubliauskas. All rights reserved.</p>
+      <a href="#about">Back to top of the page</a>
+      <p>??</p>
     </div>
   </footer>
 

@@ -1,3 +1,6 @@
+let currentLang = document.getElementsByTagName("html")[0].lang;
+//console.log(currentLang);
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement(
     {
