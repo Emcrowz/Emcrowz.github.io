@@ -12,11 +12,14 @@
   /* border: 1px solid black; */
 }
 /* Global state */
-html,
-body {
-  width: 100%;
+html {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+}
+
+body {
+  width: 100%;
+
   background-color: var(--color-background);
 }
 
