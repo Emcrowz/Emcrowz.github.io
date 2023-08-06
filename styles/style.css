@@ -5,15 +5,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --color-background: rgb(250, 250, 250);
+
+  /* For testing and visual tracking */
+  /* border: 1px solid black; */
 }
 /* Global state */
 html,
 body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-
-  --color-test: rgb(255, 55, 55);
+  font-size: 18px;
+  background-color: var(--color-background);
 }
 
 h1 {
@@ -71,9 +75,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: center;
-
-  /* for visual representation */
-  background-color: bisque;
 }
 
 #profile-pic {
@@ -113,8 +114,6 @@ a {
 /* Content a.k.a work and projects part styles */
 #work-and-projects {
   height: 100vh;
-  /* for visual representation */
-  background-color: rgb(134, 124, 113);
 
   display: flex;
   justify-content: center;
@@ -127,8 +126,6 @@ a {
 /* Footer part styles */
 #footer-box {
   height: 25vh;
-  /* for visual representation */
-  background-color: rgb(139, 113, 80);
 
   display: flex;
   justify-content: space-evenly;
