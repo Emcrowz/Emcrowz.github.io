@@ -6,28 +6,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="/styles/style.css" />
-  <title>About me</title>
+  <title>Martynas Vrubliauskas | Portfolio</title>
 </head>
 
 <body>
-  <!-- Head part of the site -->
-  <header>
-    <nav>
-      <ul id="nav-list">
+  <!-- Navigation part (top of the screen) -->
+  <nav id="main-nav">
+    <div id="nav-links">
+      <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills-and-experience">Skills and Experience</a></li>
         <li><a href="#work-and-projects">Work and Projects</a></li>
-        <li><a href="#">X</a></li>
+        <li><a href="#socials">Socials</a></li>
       </ul>
-    </nav>
-    <div id="signature">
-      <span>[signature]</span>
     </div>
     <div id="language-set">
-      <ul id="lang-set-list">
-        <li>LT</li>
-        <li>EN</li>
+      <ul>
+        <li><a href="#" id="lng-en">EN</a></li>
+        <li><a href="#" id="lng-lt">LT</a></li>
       </ul>
     </div>
+  </nav>
+
+  <!-- Header part of the site -->
+  <header>
   </header>
 
   <!-- Main part of the content -->
@@ -45,8 +47,119 @@
     </div>
   </main>
 
+  <section id="skills-and-experience">
+    <div id="skills-holder">
+      <h2>My skills and experience:</h2>
+      <div id="skillset">
+        <div id="skillset-programming">
+          <h3>Programming/Scripting:</h3>
+          <div class="skill">
+            <h4>JavaScript</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>ReactJS</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>node.js</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>NextJS</h4>
+            <p>...</p>
+          </div>
+        </div>
+        <div id="skillset-desgin">
+          <h3>Design:</h3>
+          <div class="skill">
+            <h4>HTML/CSS</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>UI/UX</h4>
+            <p>...</p>
+          </div>
+          <div class="skill">
+            <h4>FIGMA</h4>
+            <p>...</p>
+          </div>
+        </div>
+        <div id="skillset-productivity">
+          <h3>Productivity:</h3>
+          <div class="skill">
+            <h4>MS Office<br />(Word, Excell, Powerpoint, Outlook, Teams)</h4>
+            <p>Self-taught, school & University</p>
+          </div>
+          <div class="skill">
+            <h4>GitHub</h4>
+            <p>Self-taught</p>
+          </div>
+        </div>
+        <div id="skillset-other">
+          <h3>Other:</h3>
+          <div class="skill">
+            <h4>Management</h4>
+            <p>University (Bachelor's & Master's)</p>
+          </div>
+          <div class="skill">
+            <h4>Project Management </h4>
+            <p>University (Bachelor's & Master's)</p>
+          </div>
+          <div class="skill">
+            <h4>HRM</h4>
+            <p>University (Master's)</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="aspirations">
+        <h2>My learning and other goals:</h2>
+        <div id="goals">
+          <div class="goal">
+            <h4>C#</h4>
+            <p>...</p>
+          </div>
+          <div class="goal">
+            <h4>C/C++</h4>
+            <p>...</p>
+          </div>
+          <div class="goal">
+            <h4>Unity</h4>
+            <p>...</p>
+          </div>
+          <div class="goal">
+            <h4>3D modelling</h4>
+            <p>Self-taught (Basics)</p>
+          </div>
+          <div class="goal">
+            <h4>GameDesign</h4>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+      <div id="per-hobbies">
+        <h2>My hobbies:</h2>
+        <div id="hobbies">
+          <div class="hobby">
+            <h4>Music Production</h4>
+            <p>Self-taught</p>
+          </div>
+          <div class="hobby">
+            <h4>Playing Guitar</h4>
+            <p>Self-taught</p>
+          </div>
+          <div class="hobby">
+            <h4>Pscyhology (Behavioural and Cognitive)</h4>
+            <p>Self-researched & University</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Work and Projects content part -->
-  <content id="work-and-projects">
+  <section id="work-and-projects">
     <div id="work-and-projects-content">
       <div id="work-holder">
         <div class="work-proj-box num-01">
@@ -72,10 +185,10 @@
         </div>
       </div>
     </div>
-  </content>
+  </section>
 
   <!-- Footer part of the content -->
-  <footer>
+  <footer id="socials">
     <div class="footer-box">
       <div class="socials-box">
         <h3>Socials</h3>
@@ -90,7 +203,8 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="script.js"></script>
+  <!-- <script src="scripts/script.js"></script> -->
+  <script type="text/javascript" src="scripts/translate.js"></script>
 </body>
 
 </html>
