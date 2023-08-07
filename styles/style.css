@@ -12,9 +12,13 @@
   /* border: 1px solid black; */
 }
 /* Global state */
+:root {
+  /* Global font size. em and rem measured from this */
+  font-size: 18px;
+}
+
 html {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
 }
 
 body {
@@ -41,13 +45,27 @@ h3 {
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.5;
+}
+
+nav,
+header,
+section,
+footer,
+#copyright {
+  padding: 1em 0;
+}
+
 /* Navigation part styles */
+
 #main-nav {
-  height: 5vh;
+  /* height: 5vh; */
   /* position: fixed; */
 
   display: flex;
@@ -71,6 +89,9 @@ a {
 }
 
 /* Header part styles */
+header {
+  display: none;
+}
 
 /* About me part styles */
 #about {
@@ -128,8 +149,6 @@ a {
 
 /* Footer part styles */
 #footer-box {
-  height: 25vh;
-
   display: flex;
   justify-content: space-evenly;
 }
@@ -140,7 +159,6 @@ a {
 }
 
 #copyright {
-  height: 5vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
