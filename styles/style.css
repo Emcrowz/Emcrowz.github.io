@@ -90,7 +90,9 @@ footer,
 
 /* Header part styles */
 header {
-  display: none;
+  border: 2px solid black;
+  color: red;
+  text-align: center;
 }
 
 /* About me part styles */
