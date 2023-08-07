@@ -99,15 +99,12 @@ header {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-items: center;
+  align-items: center;
 }
 
-#profile-pic {
-  padding: 0.25em;
-}
-
-#profile-pic img {
-  height: auto;
-  width: auto;
+#profile-img {
+  height: 25em;
+  width: 25em;
 }
 #profile-desc h1 {
   padding: 0.25em 0;
