@@ -97,14 +97,25 @@ header {
 
 /* About me part styles */
 #about {
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   justify-items: center;
   align-items: center;
+
+  @media (max-width: 850px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  grid-template-columns: 1fr 2fr;
+  height: auto;
+  display: grid;
 }
 
 #profile-img {
+  @media (max-width: 850px) {
+    height: 15em;
+    width: 15em;
+  }
+
   height: 25em;
   width: 25em;
 }
@@ -113,6 +124,10 @@ header {
   text-align: center;
 }
 #profile-desc p {
+  @media (max-width: 850px) {
+    word-wrap: normal;
+  }
+
   padding: 0.25em;
 }
 
@@ -122,24 +137,28 @@ header {
   text-align: center;
 }
 
-#skillset {
-  display: flex;
-  justify-content: space-evenly;
-}
-#goals {
-  display: flex;
-  justify-content: space-evenly;
-}
+#skillset,
+#goals,
 #hobbies {
   display: flex;
+
+  @media (max-width: 950px) {
+    flex-wrap: wrap;
+  }
+
   justify-content: space-evenly;
 }
-/* Content a.k.a work and projects part styles */
-#work-and-projects {
-  height: 100vh;
 
+/* Content a.k.a work and projects part styles */
+
+#work-and-projects {
   display: flex;
   justify-content: center;
+}
+
+#work-and-projects-filter {
+  display: flex;
+  justify-content: space-between;
 }
 
 .work-proj-box {
