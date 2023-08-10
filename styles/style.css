@@ -1,5 +1,7 @@
 /* Palette URL: http://paletton.com/#uid=53c070kV5rShgBWozE4Zsbc+B55 */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500&display=swap");
+
 /* INIT */
 * {
   margin: 0;
@@ -36,7 +38,7 @@
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
+  font-family: Inter, "Open Sans", sans-serif;
   word-wrap: break-word;
 }
 
@@ -68,10 +70,11 @@ li {
 
 a {
   text-decoration: none;
+  font-size: 16px;
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 /* Translation box */
