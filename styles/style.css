@@ -141,6 +141,7 @@ header {
   grid-template-columns: 1fr 2fr;
   height: auto;
   align-items: center;
+  padding: 2em 0;
 
   background: var(--color-primary-1);
   background: -moz-linear-gradient(
@@ -170,7 +171,7 @@ header {
 
 #profile-img {
   justify-self: end;
-  border-radius: 5em 5em 0;
+  border-radius: 2em 0 0 2em;
   height: 25em;
   width: 25em;
 
@@ -182,7 +183,7 @@ header {
     height: 15em;
     width: 15em;
 
-    border-radius: 0 5em;
+    border-radius: 0 2em;
     box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
@@ -191,12 +192,16 @@ header {
 
 #profile-desc {
   margin: 1em;
-  border-radius: 2em;
+  border-radius: 0 2em 2em 0;
   background-color: var(--color-secondary-1-1);
 
   box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
   -moz-box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
+
+  @media (max-width: 850px) {
+    border-radius: 2em 0;
+  }
 }
 
 #profile-desc p {
@@ -211,6 +216,9 @@ header {
 /* Skills part styles */
 #skills-and-experience {
   display: block;
+  padding: 3em 0;
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black; */
 
   background: rgb(44, 189, 161);
   background: -moz-linear-gradient(
@@ -233,14 +241,16 @@ header {
 
 #skills-and-experience h2 {
   text-align: center;
-  margin-bottom: 0.5em;
   text-decoration: underline;
+  padding: 1em 0;
 }
 
 #skillset {
   margin: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  
 
   @media (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
@@ -253,6 +263,7 @@ header {
 
 #aspirations,
 #per-hobbies {
+  padding: 1em 0;
   margin: 1em 1em 0 1em;
 }
 
@@ -289,6 +300,13 @@ header {
   background: var(--color-primary-1);
 }
 
+#skillset-programming h3,
+#skillset-design h3,
+#skillset-productivity h3,
+#skillset-other h3 {
+  padding: 1em 0;
+}
+
 .skill:hover,
 .goal:hover,
 .hobby:hover {
@@ -303,13 +321,8 @@ header {
 /* Content a.k.a work and projects part styles */
 #work-and-projects {
   display: block;
+  padding: 4em 0;
   background: var(--color-secondary-1-1);
-}
-
-#work-and-projects-content h2 {
-  text-align: center;
-  margin-bottom: 1em;
-  text-decoration: underline;
 }
 
 #work-and-projects-content h3 {
@@ -322,7 +335,7 @@ header {
 
 #work-and-projects-filter {
   margin: 0em 0.5em;
-  border-radius: 2em 2em 0 0;
+  /* border-radius: 2em 2em 0 0; */
 
   border-bottom: 0.25em solid var(--color-secondary-1-2);
   background: var(--color-secondary-2-2);
@@ -360,7 +373,7 @@ header {
 
 #work-holder:last-child {
   padding-bottom: 1em;
-  border-radius: 0 0 2em 2em;
+  border-radius: 0 0 1em 1em;
 }
 
 .work-proj-box {
@@ -428,13 +441,22 @@ footer {
 
 #socials-box,
 #contacts-box {
+  width: 100%;
   margin: 0 0.5em 0.5em 0.5em;
+  border-left: 0.125em solid var(--color-secondary-1-3);
+  border-bottom: 0.125em solid var(--color-secondary-1-3);
+  border-radius: 0 0 0 2em;
+
+  @media (max-width: 950px) {
+    text-align: center;
+  }
 }
 
 #socials-box h3,
 #contacts-box h3 {
   padding: 0.5em;
 }
+
 .social,
 .contact {
   padding: 0.5em;
