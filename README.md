@@ -1,5 +1,7 @@
 # https://Emcrowz.github.io
 
-A personal portfolio amd GitHub pages deployment test. Slowly but surely it'll be transformed into full portfolio site.
+LT:
+Asmeninis portfolio svetainė/puslapis patalpintas per GitHub pages. Statiniu būdu sukurtas puslapis - HTML/CSS/JavaScript.
 
-Work in progress...
+EN:
+A personal portfolio  amd GitHub pages deployment test. Static type webpage made only with HTML/CSS/JavaScript.
