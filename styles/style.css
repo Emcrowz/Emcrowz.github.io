@@ -13,7 +13,7 @@
   --color-primary-4: #001a15;
 
   --color-secondary-1-0: #008086;
-  --color-secondary-1-1: #52acb0; 
+  --color-secondary-1-1: #52acb0;
   --color-secondary-1-2: #2bb1b7;
   --color-secondary-1-3: #003336;
   --color-secondary-1-4: #001718;
@@ -90,17 +90,16 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
 
   overflow-wrap: normal;
 }
 
 #nav-links {
   background-color: var(--color-secondary-2-1);
-  
-  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.20);
-  -webkit-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.20);
-  -moz-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.20);
+
+  box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.2);
 
   padding: 1em;
   margin: 1em;
@@ -258,7 +257,7 @@ header {
 #hobbies {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   @media (max-width: 850px) {
     display: block;
@@ -373,13 +372,25 @@ header {
 
 .work-proj-box img {
   padding: 1em 0 1em 1em;
-  width: 10em;
-  height: 10em;
+  width: 15em;
+  height: 15em;
+  cursor: pointer;
+
+  @media (max-width: 850px) {
+    width: 10em;
+    height: 10em;
+  }
 }
 
 .work-proj-box p,
 .work-proj-box a {
   padding: 1em;
+}
+
+.work-proj-preview {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Footer part styles */
@@ -409,7 +420,6 @@ footer {
 
   @media (max-width: 950px) {
     flex-wrap: wrap;
-    
   }
 }
 
