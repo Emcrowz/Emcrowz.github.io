@@ -250,8 +250,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  
-
   @media (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -386,7 +384,12 @@ header {
   }
 }
 
-.work-proj-box img {
+.work-proj-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work-proj-imgs img {
   padding: 1em 0 1em 1em;
   width: 15em;
   height: 15em;
@@ -440,7 +443,8 @@ footer {
 }
 
 #socials-box,
-#contacts-box {
+#contacts-box,
+#sites-box {
   width: 100%;
   margin: 0 0.5em 0.5em 0.5em;
   border-left: 0.125em solid var(--color-secondary-1-3);
@@ -453,12 +457,14 @@ footer {
 }
 
 #socials-box h3,
-#contacts-box h3 {
+#contacts-box h3,
+#sites-box h3 {
   padding: 0.5em;
 }
 
 .social,
-.contact {
+.contact,
+.site {
   padding: 0.5em;
 }
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
-    <title>Martynas Vrubliauskas | Bendrai</title>
+    <title>MV Profilis/Portfolio</title>
     <!-- This portfolio is designed to be simple, standalone, one-page site -->
   </head>
 
@@ -57,7 +57,8 @@
         </p>
         <p>
           Veikla: Užsiėmu svetainių kūrimu tiek statinių, tiek dinaminių.
-          Orientuojuosi į front-end ir Full-Stack.
+          Orientuojuosi į <strong>front-end</strong> ir
+          <strong>full-stack</strong> web kūrimą.
         </p>
         <p>
           Naudoju šiuos svetainių įrankius, karkasus (angl.
@@ -198,6 +199,10 @@
             <h4>Psichologija (Elgesio ir Kognytyvinė)</h4>
             <p>Savarankiškas mokymasis ir žinios iš Universiteto</p>
           </div>
+          <div class="hobby">
+            <h4>Saviugda</h4>
+            <p>Savarankiškas mokymasis ir tobulėjimas įvairiose srityse</p>
+          </div>
         </div>
       </div>
     </section>
@@ -215,24 +220,57 @@
         </div>
         <div id="work-holder">
           <div class="work-proj-box num-01">
-            <img
-              src="./assets/pictures/Vilnius700Quiz/Vilnius700Quiz-01.png"
-              alt="proj vilnius-700-quiz"
-            />
+            <div class="work-proj-imgs">
+              <img
+                src="./assets/pictures/Vilnius700Quiz/Vilnius700Quiz-01.png"
+                alt="proj vilnius-700-quiz"
+              />
+            </div>
             <div class="work-proj-desc">
               <h3>Vilnius 700 klausimynas</h3>
               <p>
                 (2023 liepa-rugpjūtis) Aplikacija sukurta su ReactJS, kurios
                 tikslas yra pateikti klausimus vartotojui, kad šis per nustatytą
-                laiką atsakytų į kuo didesnį skaičių klausimų.
+                laiką atsakytų į kuo didesnį skaičių klausimų (variantas 1). Tuo
+                pačiu buvo sukurtas ir kitas variantas (variantas 2)
+                aplikacijos, kur vartotojas nėra ribojamas laiko ir paspaudęs
+                ant atsakymo, po nustatyto laiko, pereina prie kito klausimo
+                automatiškai.
+              </p>
+              <p>
+                <em
+                  >Projekto idėja buvo paimta išplėtimui ir smagiam pritaikymui
+                  iš Udemy svetainės patalpinto
+                  <strong
+                    ><a href="https://codingheroes.io/" target="_blank"
+                      >Jonas Schmedtmann</a
+                    ></strong
+                  >
+                  kurso
+                  <strong
+                    ><a
+                      href="https://www.udemy.com/course/the-ultimate-react-course/"
+                      target="_blank"
+                      >"The Ultimate React Course 2023: React, Redux & More"</a
+                    ></strong
+                  >.<br />Kodo bazė nebuvo ir nėra naudojama komerciniams
+                  tikslams. Naudota mokymosi tikslams.
+                </em>
               </p>
 
               <div class="work-proj-preview">
                 <a href="https://github.com/Emcrowz/Vilnius700-Quiz"
                   >GitHub projekto nuoroda</a
                 >
-                <a href="https://vilnius-700-quiz-mv.netlify.app/"
-                  >Gyva peržiūra</a
+                <a
+                  href="https://vilnius-700-quiz-mv.netlify.app/"
+                  target="_blank"
+                  >Gyva peržiūra | variantas 1
+                </a>
+                <a
+                  href="https://vilnius-700-quiz-mv-2.netlify.app/"
+                  target="_blank"
+                  >Gyva peržiūra | variantas 2</a
                 >
               </div>
             </div>
@@ -261,12 +299,14 @@
               >
             </div>
             <div class="social">
-              <a href="https://www.facebook.com/martynas.vrubliauskas.1"
+              <a
+                href="https://www.facebook.com/martynas.vrubliauskas.1"
+                target="_blank"
                 ><span>Facebook</span></a
               >
             </div>
             <div class="social">
-              <a href="https://discord.com/users/emcrowz"
+              <a href="https://discord.com/users/emcrowz" target="_blank"
                 ><span>Discord</span></a
               >
             </div>
@@ -283,6 +323,37 @@
             <span>Martynas.Vru@gmail.com</span>
           </div>
         </div>
+
+        <!-- Sites I use daily -->
+        <div id="sites-box">
+          <h3>Svetainės, kurias naudoju kasdien</h3>
+          <div class="site">
+            <span
+              ><a href="https://www.codecademy.com/" target="_blank"
+                >Codecademy</a
+              ></span
+            >
+          </div>
+          <div class="site">
+            <span
+              ><a href="https://www.udemy.com/" target="_blank">Udemy</a></span
+            >
+          </div>
+          <div class="site">
+            <span
+              ><a href="https://codesandbox.io/" target="_blank"
+                >Codesandbox</a
+              ></span
+            >
+          </div>
+          <div class="site">
+            <span
+              ><a href="https://www.netlify.com/" target="_blank"
+                >Netlify</a
+              ></span
+            >
+          </div>
+        </div>
       </div>
 
       <!-- Copyright, to the top of page and Time -->
@@ -292,7 +363,7 @@
           <em>Visos teisės yra saugomos.</em>
         </p>
         <p id="version">
-          Versija 0.9.0<br /><span id="version-type"
+          Versija 0.9.1<br /><span id="version-type"
             >Svetainė sukurta su HTML/CSS/JavaScript</span
           >
         </p>
