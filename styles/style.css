@@ -39,7 +39,7 @@
 /* Global state */
 :root {
   /* Global font size. em and rem measured from this */
-  font-size: 18px;
+  font-size: 20px;
 }
 
 html {
@@ -124,10 +124,6 @@ p {
 #nav-links ul {
   display: flex;
   gap: 0.5em;
-
-  @media (max-width: 850px) {
-    flex-wrap: wrap;
-  }
 }
 
 #nav-links ul li {
@@ -171,13 +167,6 @@ header {
     var(--color-primary-2) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#54b7a4",endColorstr="#2cbda1",GradientType=1);
-
-  @media (max-width: 850px) {
-    display: flex;
-    flex-wrap: wrap;
-
-    justify-content: center;
-  }
 }
 
 #profile-img {
@@ -187,43 +176,22 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
-
-  @media (max-width: 850px) {
-    height: 20em;
-    width: 100%;
-    object-fit: cover;
-    padding-left: 0;
-    margin: 0 1em;
-    border-radius: 2em 2em 0 0;
-  }
 }
 
 #profile-desc-box {
   margin-right: 1em;
   border-radius: 0 2em 2em 0;
   background-color: var(--color-secondary-1-1);
-
-  @media (max-width: 850px) {
-    margin: 0 1em;
-    border-radius: 0 0 2em 2em;
-  }
 }
 
 #profile-desc-box p {
   padding: 0.25em 1em;
   margin: 0 0.5em;
-
-  @media (max-width: 850px) {
-    word-wrap: normal;
-  }
 }
 
 #profile-desc-box li {
   padding: 0.25em 2em;
   margin: 0 0.25em;
-  @media (max-width: 850px) {
-    word-wrap: normal;
-  }
 }
 
 #technologies-i-use {
@@ -266,14 +234,6 @@ header {
   margin: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 850px) {
-    display: block;
-  }
 }
 
 #aspirations,
@@ -287,10 +247,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-
-  @media (max-width: 850px) {
-    display: block;
-  }
 }
 
 .skill,
@@ -339,20 +295,24 @@ header {
   background: var(--color-secondary-1-1);
 }
 
+#work-holder h2 {
+  text-align: center;
+  text-decoration: underline;
+  word-wrap: normal;
+
+  padding: 1em 0;
+}
+
 #work-and-projects-content h3 {
   padding: 0.75em;
-
-  @media (max-width: 850px) {
-    text-align: center;
-  }
 }
 
+/* Work and project filter part. Hidden for now */
 #work-and-projects-filter {
-  border-bottom: 0.25em solid var(--color-secondary-1-2);
-  background: var(--color-secondary-2-2);
+  display: none;
 }
 
-#works-filter {
+/* #works-filter {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -369,29 +329,20 @@ header {
   border-radius: 0.25em;
 
   transform: translateY(-0.25rem);
-}
+} */
 
 #work-holder {
   display: block;
   justify-content: center;
 
-  background: var(--color-secondary-1-2);
+  /* background: var(--color-secondary-1-2); */
 
   padding-bottom: 1em;
   border-radius: 0 0 5em 5em;
-
-  @media (max-width: 700px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 .work-proj-box {
   padding-top: 1em;
-
-  @media (max-width: 850px) {
-    flex-wrap: wrap;
-  }
 }
 
 .work-proj-desc h3,
@@ -434,10 +385,6 @@ footer {
 #footer-box {
   display: flex;
   justify-content: space-around;
-
-  @media (max-width: 950px) {
-    flex-wrap: wrap;
-  }
 }
 
 #socials-box,
@@ -448,10 +395,6 @@ footer {
   border-left: 0.125em solid var(--color-secondary-1-3);
   border-bottom: 0.125em solid var(--color-secondary-1-3);
   border-radius: 0 0 0 2em;
-
-  @media (max-width: 950px) {
-    text-align: center;
-  }
 }
 
 #socials-box h3,
@@ -474,13 +417,14 @@ footer {
   align-items: center;
 
   text-align: center;
-
-  @media (max-width: 950px) {
-    display: block;
-  }
 }
 
 #copyright p,
 #copyright span:last-child {
   padding-bottom: 1em;
+}
+
+#link-to-top-page {
+  text-align: center;
+  padding: 1em 0;
 }
