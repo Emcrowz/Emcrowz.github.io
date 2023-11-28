@@ -1,77 +1,78 @@
 @media (max-width: 1200px) {
-    /* Skills */
-    #skillset {
-        grid-template-columns: 1fr 1fr;
-    } 
+  /* Skills */
+  #skillset {
+    grid-template-columns: 1fr 1fr;
   }
+}
 
 @media (max-width: 850px) {
-    /* Nav bar */
-    #nav-links ul {
-        flex-wrap: wrap;
-    }
-
-    /* About me section */
-    #about {
-        display: flex;
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    #profile-img {
-        height: 20em;
-        width: 100%;
-        object-fit: cover;
-        padding-left: 0;
-        margin: 0 1em;
-        border-radius: 2em 2em 0 0;
-    }
-
-    #profile-desc-box {
-        margin: 0 1em;
-        border-radius: 0 0 2em 2em; 
-    }
-
-    #profile-desc-box p,
-    #profile-desc-box li {
-        word-wrap: normal;
-    }
-
-    /* Skills */
-    #skillset,
-    #goals,
-    #hobbies {
-        display: block;
-    }
-
-    /* Projects */
-    #work-and-projects-content h3 {
-        text-align: center;
-    }
-
-    #work-holder {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .work-proj-box {
-        flex-wrap: wrap;
-    }
-
-    
-    /* Footer */
-    #footer-box {
-        flex-wrap: wrap;
-    }
-
-    #socials-box,
-    #contacts-box,
-    #sites-box {
-        text-align: center;
-    }
-
-    #copyright {
-        display: block;
-    }
+  /* Nav bar */
+  #nav-logo,
+  #nav-links {
+    display: none;
   }
+
+  #translator-box {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+  }
+
+  /* About me section */
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  #profile-img {
+    height: 20em;
+    width: 100%;
+    object-fit: cover;
+    padding-left: 0;
+    margin: 0 1em;
+    border-radius: 2em 2em 0 0;
+  }
+
+  #profile-desc-box {
+    margin: 0 1em;
+    border-radius: 0 0 2em 2em;
+  }
+
+  #profile-desc-box p,
+  #profile-desc-box li {
+    word-wrap: normal;
+  }
+
+  /* Footer */
+  #footer-box {
+    flex-wrap: wrap;
+  }
+
+  #socials-box,
+  #contacts-box,
+  #sites-box {
+    text-align: center;
+  }
+
+  #copyright {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #skills-and-projects {
+    display: block;
+  }
+
+  #skills-container {
+    border-right: none;
+    padding-right: 0;
+  }
+
+  #work-and-projects {
+    margin-top: 2em;
+    padding-left: 0;
+  }
+}
