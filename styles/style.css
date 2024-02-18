@@ -73,7 +73,7 @@ shade 4 = #006350 = rgb(  0, 99, 80) = rgba(  0, 99, 80,1) = rgb0(0,0.388,0.314)
 /* Global state */
 :root {
   /* Global font size. em and rem measured from this */
-  font-size: 18px;
+  font-size: 16px;
 }
 
 html {
@@ -109,7 +109,6 @@ li {
 
 a {
   text-decoration: none;
-  font-size: 16px;
 }
 
 a:hover,
@@ -122,7 +121,7 @@ p {
 }
 
 #about {
-  margin-bottom: 2em;
+  padding: 2em;
 }
 
 #skills-and-projects,
@@ -173,7 +172,7 @@ p {
 
 #main-nav:first-child,
 #main-nav:last-child {
-  padding: 0 1em;
+  padding: 0 2em;
 }
 
 #nav-logo {
@@ -203,7 +202,6 @@ p {
 
   box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
-  -moz-box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
 }
 /* Translation box */
 #translator-box span:hover {
@@ -226,29 +224,41 @@ header {
 /* About me part styles */
 #about {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 1fr;
   height: auto;
 }
 
-#profile-img {
+#profile-picture-socials {
+  display: inherit;
+  
+  grid-column: 1 / 2;
+  grid-row: 1 / span 2;
+
+  margin-right: 1.25rem;
+  box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
+}
+
+#profile-pic-box {
   grid-column: 1 / 1;
-  grid-row: 1 / 1;
+  grid-row: 1 / 2;
+  height: auto;
+}
 
-  justify-self: end;
-
-  height: 17.5em;
+#profile-img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
 #socials-box {
   grid-column: 1 / 2;
-  grid-row: 2 / 2;
+  grid-row: 2 / 3;
 
   background: var(--color-primary-2);
 
-  text-wrap: wrap;
+  padding: 1em;
+  /* justify-self: stretch;   */
 }
 
 #socials,
@@ -275,17 +285,16 @@ header {
   grid-row: 1 / span 2;
 
   background: var(--color-primary-2);
-  border-left: 0.125em solid var(--color-secondary-2-3);
+  
+  box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
 }
 
 #profile-desc-box p {
-  padding: 0.25em 1em;
-  margin: 0 0.5em;
+  padding: 0.5em 1em;
 }
 
 #profile-desc-box li {
   padding: 0.25em 2em;
-  margin: 0 0.25em;
 }
 
 #profile-desc-box:last-child {
@@ -326,7 +335,7 @@ header {
 .work-proj-preview {
   margin-top: 1em;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   flex-wrap: wrap;
 
   align-content: center;
