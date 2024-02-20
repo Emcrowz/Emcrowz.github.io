@@ -115,7 +115,7 @@
 
   /* Goes under the description */
   #profile-picture-socials {
-    /* margin: 0 1em; */
+    margin: auto 0;
     text-align: center;
 
     box-shadow: none;
