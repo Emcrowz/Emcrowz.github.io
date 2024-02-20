@@ -2,7 +2,7 @@
   :root {
     font-size: 36px;
   }
-  
+
   #about {
     grid-template-columns: 1fr 1fr 5fr;
     grid-template-rows: 1fr;
@@ -113,8 +113,11 @@
     justify-content: center;
   }
 
+  /* Goes under the description */
   #profile-picture-socials {
-    margin: 0 2em;
+    /* margin: 0 1em; */
+    text-align: center;
+
     box-shadow: none;
   }
 
@@ -126,6 +129,8 @@
     display: inherit;
     flex-wrap: wrap;
     justify-content: center;
+    /* margin: 0 1em; */
+
     border-radius: 0 0 2em 2em;
     width: 100%;
   }
@@ -141,7 +146,7 @@
   }
 
   #profile-desc-box {
-    margin: 0 2em;
+    /* margin: 0 1em; */
     border-radius: 2em 2em 0 0;
 
     text-align: center;
@@ -166,6 +171,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  #profile-picture-socials {
+    margin: auto 0;
+    box-shadow: none;
+  }
+
   #skills-and-projects {
     display: block;
   }
@@ -190,7 +200,12 @@
 }
 
 @media screen and (max-width: 400px) {
+  #profile-picture-socials {
+    margin: auto 0;
+    box-shadow: none;
+  }
+
   #skills-container {
-    padding: 0 1em; 
+    padding: 0 1em;
   }
 }

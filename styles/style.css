@@ -120,6 +120,18 @@ p {
   line-height: 1.75;
 }
 
+.socials-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.socials-icon:hover,
+.socials-icon:active {
+  transition: var(--set-transition-time);
+  height: 1.75rem;
+  width: 1.75rem;
+}
+
 #about {
   padding: 2em;
 }
@@ -133,7 +145,7 @@ p {
 .progress {
   width: 100%;
   height: 1.25em;
-  -webkit-mask: linear-gradient(90deg, var(--color-secondary-2-3) 75%, #0000 0)
+  -webkit-mask: linear-gradient(90deg, var(--color-secondary-2-3) 65%, #0000 0)
     0/20%;
   background: linear-gradient(var(--color-secondary-2-3) 0 0) 0/0% no-repeat
     var(--color-primary-2);
@@ -231,7 +243,7 @@ header {
 
 #profile-picture-socials {
   display: inherit;
-  
+
   grid-column: 1 / 2;
   grid-row: 1 / span 2;
 
@@ -285,7 +297,7 @@ header {
   grid-row: 1 / span 2;
 
   background: var(--color-primary-2);
-  
+
   box-shadow: 10px 10px 24px -10px rgba(0, 0, 0, 0.19);
 }
 
@@ -335,7 +347,7 @@ header {
 .work-proj-preview {
   margin-top: 1em;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   align-content: center;
