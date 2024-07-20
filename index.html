@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
     <link rel="stylesheet" type="text/css" href="/styles/media.css" />
-    <title>MV Profilis/Portfolio</title>
+    <title translation-content="title"></title>
     <!-- This portfolio is designed to be simple, standalone, one-page site -->
     <!-- SVGs used in Socials section are taken from: "Social And Company Colored Logo Icons Collection". Link: https://www.svgrepo.com/collection/social-and-company-colored-logo-icons/ -->
   </head>
@@ -113,15 +113,15 @@
       <!-- Navigation part -->
       <div id="nav-links">
         <ul>
-          <li><a href="#about">Apie mane</a></li>
-          <li><a href="#skills-and-projects">Įgūdžiai ir darbai</a></li>
+          <li><a href="#about" translation-content="aboutMe">Apie mane</a></li>
+          <li><a href="#skills-and-projects" translation-content="skillsAndProjects">Įgūdžiai ir darbai</a></li>
         </ul>
       </div>
 
       <!-- Translation setter -->
       <div id="translator-box">
-        <span class="lang-selected">LT</span>
-        <span>EN</span>
+        <a href="index.html" class="lang-lt" onclick="changeLanguage('lt')">LT</a>
+        <a href="index.html" class="lang-en" onclick="changeLanguage('en')">EN</a>
       </div>
     </nav>
 
@@ -138,7 +138,7 @@
         </div>
         <!-- Socials box -->
         <div id="socials-box">
-          <h3>Esu pasiekiamas:</h3>
+          <h3 translation-content="socialsTitle"></h3>
 
           <!-- Code related socials -->
           <div id="socials">
@@ -221,7 +221,7 @@
             <!-- General socials -->
             <div class="social">
               <a
-                href="https://www.linkedin.com/in/martynas-vrubliauskas-7309b224a"
+                href="https://www.linkedin.com/in/martynasvru/"
                 target="_blank"
               >
                 <span>
@@ -314,18 +314,8 @@
             </div> -->
           </div>
 
-          <h3>Email:</h3>
+          <h3 translation-content="socialsEmail"></h3>
           <div id="contacts">
-            <div class="contact">
-              <a href="mailto:Emcrowz@outlook.com">Emcrowz@outlook.com</a>
-            </div>
-
-            <div class="contact">
-              <a href="mailto:Martynas.Vru@outlook.com"
-                >Martynas.Vru@outlook.com</a
-              >
-            </div>
-
             <div class="contact">
               <a href="mailto:Martynas.Vru@gmail.com">Martynas.Vru@gmail.com</a>
             </div>
@@ -334,42 +324,30 @@
       </div>
       <!-- About me text -->
       <div id="profile-desc-box">
-        <h1>Sveiki!</h1>
-        <p>Esu Martynas Vrubliauskas (@emcrowz).</p>
-        <p>Amžius: 29</p>
-        <p>Vieta: Lietuva, Vilnius.</p>
-        <p>Išsilavinimas:</p>
+        <h1 translation-content="profileGreet"></h1>
+        <p translation-content="profileIntro"></p>
+        <p translation-content="profileAge"></p>
+        <p translation-content="profileLocation"></p>
+        <p translation-content="profileEducation"></p>
         <ul>
           <li>
-            <strong>Bakalauras</strong
-            ><em
-              >(2022 m. baigtos
-              <strong>Verslo Informacinių Sistemų</strong> studijos; Vilniaus
-              Universitetas),</em
-            >
+            <strong translation-content="profileEduBachelors"></strong> - <strong translation-content="profileEduBachelors-subj"></strong> - <em translation-content="profileEduBachelors-desc"></em>
           </li>
           <li>
-            <strong>Magistras</strong
-            ><em
-              >(2024 m. baigtos
-              <strong>Žmogiškųjų Išteklių Valdymo</strong> studijos; Vilniaus
-              Universitetas).</em
-            >
+            <strong translation-content="profileEduMasters"></strong> - <strong translation-content="profileEduMasters-subj"></strong> - <em translation-content="profileEduMasters-desc"></em>
           </li>
         </ul>
-        <p>
-          Veikla: Orientuojuosi į C# (.NET), aplikacijų, <strong>full-stack</strong> interneto svetainių ir kompiuterinių žaidimų, programavimą.
-        </p>
+        <p translation-content="profileWhatIDo"></p>
       </div>
     </section>
 
     <!-- Skills and projects -->
     <section id="skills-and-projects">
       <div id="skills-container">
-        <h2>Mano patirtis</h2>
+        <h2 translation-content="profileSkillsAndExperience-title"></h2>
         <!-- Programming -->
         <div class="skills skillset-programming">
-          <h3>Programavimas:</h3>
+          <h3 translation-content="profileSkillsAndExperience-programming"></h3>
           <div class="skill">
             <h4>C#</h4>
             <div class="progress skill-04"></div>
@@ -378,22 +356,19 @@
             <h4>JavaScript/TypeScript</h4>
             <div class="progress skill-03"></div>
           </div>
+          
           <div class="skill">
-            <h4>Python</h4>
+            <h4>ASP.NET Core</h4>
             <div class="progress skill-03"></div>
           </div>
           <div class="skill">
-            <h4>PHP</h4>
-            <div class="progress skill-02"></div>
-          </div>
-          <div class="skill">
-            <h4>Node.js</h4>
+            <h4>ReactJS</h4>
             <div class="progress skill-02"></div>
           </div>
         </div>
         <!-- Design -->
         <div class="skills skillset-design">
-          <h3>Dizainas:</h3>
+          <h3 translation-content="profileSkillsAndExperience-design"></h3>
           <div class="skill">
             <h4>HTML/CSS</h4>
             <div class="progress skill-04"></div>
@@ -405,7 +380,7 @@
         </div>
         <!-- Productivity -->
         <div class="skills skillset-productivity">
-          <h3>Produktyvumas:</h3>
+          <h3 translation-content="profileSkillsAndExperience-productivity"></h3>
           <div class="skill">
             <h4>MS Office <br />(<em>Word, Excell, ...</em>)</h4>
             <div class="progress skill-05"></div>
@@ -414,111 +389,46 @@
             <h4>GitHub</h4>
             <div class="progress skill-03"></div>
           </div>
-        </div>
-        <!-- Other -->
-        <div class="skills skillset-other">
-          <h3>Kiti:</h3>    
           <div class="skill">
-            <h4>C++</h4>
+            <h4>Figma</h4>
             <div class="progress skill-02"></div>
-          </div>
-          <div class="skill">
-            <h4>Godot</h4>
-            <div class="progress skill-03"></div>
-          </div>
-          <div class="skill">
-            <h4>3D modeliavimas (<em>Blender</em>)</h4>
-            <div class="progress skill-03"></div>
-          </div>
-          <div class="skill">
-            <h4>Žaidimų dizainas</h4>
-            <div class="progress skill-02"></div>
-          </div>
-          <div class="skill">
-            <h4>Muzikos kūrimas (<em>StudioOne</em>)</h4>
-            <div class="progress skill-04"></div>
           </div>
         </div>
       </div>
 
       <div id="work-and-projects">
-        <h2>Atlikti darbai ir projektai</h2>
+        <h2 translation-content="profileProjects-title"></h2>
         <div id="work-holder">
           <!-- Work and projects -->
           <div class="work-proj-box num-01">
             <div class="work-proj-desc">
-              <h3>Profilio/Portfolio svetainė (Statinė)</h3>
-              <p>
-                Statinė svetainė, kurią sukuriau naudodamas tik HTML/CSS ir
-                JavaScript. Papildomų priemonių nebuvo naudota.
-              </p>
-              <p>
-                Svetainės karkasą galima naudoti visiems.
-                <strong
-                  >Tačiau asmeninės nuotraukos ir kitų asmeninių duomenų
-                  susijusių su manimi prašau nenaudoti</strong
-                >
-              </p>
+              <h3 translation-content="profileProject-title-01"></h3>
+              <p translation-content="profileProject-desc-01"></p>
               <div class="work-proj-preview">
                 <a href="https://emcrowz.github.io/" target="_blank">Demo: GitHub pages</a>
-                <a href="https://github.com/Emcrowz/Emcrowz.github.io" target="_blank">GitHub repositorija (kodas)</a>
+                <a href="https://github.com/Emcrowz/Emcrowz.github.io" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
 
           <div class="work-proj-box num-02">
             <div class="work-proj-desc">
-              <h3>Vilnius 700 klausimynas, viktorina</h3>
-              <p>
-                Aplikacija sukurta su ReactJS, kurios tikslas yra pateikti
-                klausimus vartotojui, kad šis per nustatytą laiką atsakytų į kuo
-                didesnį skaičių klausimų (variantas 1). Tuo pačiu buvo sukurtas
-                ir kitas variantas (variantas 2) aplikacijos, kur vartotojas
-                nėra ribojamas laiko ir paspaudęs ant atsakymo, po nustatyto
-                laiko, pereina prie kito klausimo automatiškai. Klausimai yra
-                talpinami Firebase DB ir pasiekiami per API užklausą.
-              </p>
-              <p>
-                <em
-                  >Projekto idėja buvo paimta išplėtimui ir smagiam pritaikymui
-                  iš Udemy svetainėje patalpinto
-                  <strong
-                    ><a href="https://codingheroes.io/" target="_blank"
-                      >Jonas Schmedtmann</a
-                    ></strong
-                  >
-                  kurso
-                  <strong
-                    ><a
-                      href="https://www.udemy.com/course/the-ultimate-react-course/"
-                      target="_blank"
-                      >"The Ultimate React Course 2023: React, Redux & More"</a
-                    ></strong
-                  ><br />Kodo bazė nebuvo ir nėra naudojama komerciniams
-                  tikslams. Naudota mokymosi tikslams.
-                </em>
-              </p>
-              <p>
-                <em
-                  >Dizaino, funkcionalumų ir kitus keitimus, pritaikymus,
-                  atlikau aš.</em
-                >
-              </p>
-
+              <h3 translation-content="profileProject-title-02"></h3>
+              <p translation-content="profileProject-desc-02"></p>
               <div class="work-proj-preview">
                 <a
                   href="https://vilnius-700-quiz-mv.netlify.app/"
-                  target="_blank">Demo: variantas 1 [Vilnius700] (Netlify)
+                  target="_blank"><span translation-content="profileProject-desc-02-link-01"></span>
                 </a>
                 <a
                   href="https://vilnius-700-quiz-mv-2.netlify.app/"
-                  target="_blank">Demo: variantas 2 [Vilnius700] (Netlify)
+                  target="_blank"><span translation-content="profileProject-desc-02-link-02"></span>
                 </a>
                 <a
                   href="https://vcb-literaturine-viktorina.netlify.app/"
-                  target="_blank">Demo: variantas 3 [Literatūrinė viktorina] (Netlify)
+                  target="_blank"><span translation-content="profileProject-desc-02-link-03"></span>
                 </a>
-                <a href="https://github.com/Emcrowz/Vilnius700-Quiz" target="_blank">GitHub repositorija (kodas)</a>
+                <a href="https://github.com/Emcrowz/Vilnius700-Quiz" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
@@ -536,11 +446,12 @@
       <div id="copyright">
         <p>
           2024&copy; Martynas Vrubliauskas.<br />
-          Visos teisės yra saugomos.
+          <span translation-content="footer-copyright"></span>
         </p>
         <p id="version">
-          Versija 1.0.2<br />
-          Svetainė sukurta su HTML/CSS/JavaScript
+          <span translation-content="footer-version"></span>
+          <br />
+          <span translation-content="footer-created-with"></span>
         </p>
         <span id="time"></span>
       </div>
@@ -550,6 +461,6 @@
     <!-- General script for basic stuff - like date setting, age calculation and etc. -->
     <script type="text/javascript" src="scripts/portfolioManager.js"></script>
     <!-- Script that changes language of the site. Still on a TO DO list. -->
-    <!-- <script type="text/javascript" src="scripts/translate.js"></script> -->
+    <script type="text/javascript" src="scripts/translate.js"></script>
   </body>
 </html>
