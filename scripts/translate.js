@@ -1,21 +1,38 @@
 let currentLang = document.getElementsByTagName("html")[0].lang;
 //console.log(currentLang);
 
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: "en",
-      includedLanguages: "en,lt",
-    },
-    "g_translate_element"
-  );
+function updateContent(langData)
+{
+  document.querySelectorAll("[translation-content]").forEach(el => {
+    const key = el.getAttribute("translation-content");
+    el.textContent = langData[key];
+  });
+};
 
-  setTimeout(function () {
-    // Set the default language to Lithuanian
-    var selectElement = document.querySelectorAll(
-      ".g_translate_element select"
-    );
-    selectElement.value = "lt";
-    selectElement.dispatchEvent(new Event("change"));
-  }, 1000);
+function setLanguagePreference(lang)
+{
+  localStorage.setItem('language', lang);
+  location.reload();
 }
+
+async function fetchLanguageData(lang) 
+{
+  const response = await fetch(`translation/${lang}.json`);
+  return response.json();
+}
+
+async function changeLanguage(lang)
+{
+  await setLanguagePreference(lang);
+
+  const langData = await fetchLanguageData(lang);
+  updateContent(langData);
+}
+
+window.addEventListener("DOMContentLoaded", async () => {
+  const userPrefferedLanguage = localStorage.getItem('language') || 'en';
+  const langData = await fetchLanguageData(userPrefferedLanguage);
+
+  updateContent(langData);
+});
+
