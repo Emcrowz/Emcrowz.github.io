@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./tailwind.css -o ./css/tailwindstyles.css",
+    "watch": "npx tailwindcss -i ./tailwind.css -o ./css/tailwindstyles.css --watch",
+    "minify": "npx tailwindcss -i ./tailwind.css -o ./css/tailwindstyles.css --minify"
+  },
+  "keywords": [],
+  "author": "Martynas Vrubliauskas (@Emcrowz)",
+  "license": "ISC",
+  "description": "Personal portfolio website built with static pages and customized with TailwindCSS",
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}

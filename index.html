@@ -1,466 +1,470 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en" class="scroll-smooth overflow-hidden max-sm:overflow-auto">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- FavIcon for the page -->
-    <!-- <link rel="icon" type="image/x-icon" href="/assets/icon/icon.ico" /> -->
-
-    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/media.css" />
-    <title translation-content="title"></title>
-    <!-- This portfolio is designed to be simple, standalone, one-page site -->
-    <!-- SVGs used in Socials section are taken from: "Social And Company Colored Logo Icons Collection". Link: https://www.svgrepo.com/collection/social-and-company-colored-logo-icons/ -->
+    <link rel="stylesheet" href="/css/tailwindstyles.css" />
+    <title>Martynas Vrubliauskas | Portfolio</title>
   </head>
-
   <body>
-    <!-- Navigation part (top of the screen) -->
-    <nav id="main-nav">
-      <div>
-        <span>
-          <!-- Created SVG and placed as a logo -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:serif="http://www.serif.com/"
-            width="100%"
-            height="100%"
-            viewBox="0 0 16 16"
-            version="1.1"
-            xml:space="preserve"
-            style="
-              fill-rule: evenodd;
-              clip-rule: evenodd;
-              stroke-linecap: round;
-              stroke-linejoin: round;
-              stroke-miterlimit: 1;
-            "
-            id="nav-logo"
-          >
-            <g
-              id="MV-Logo-SVG"
-              transform="matrix(1.01384,0,0,1.02559,-0.0138363,-0.0255913)"
-            >
-              <g
-                id="ShadowLine-Curve"
-                transform="matrix(1.00128,-0.000419208,-0.000419208,1.00014,0.00472395,-0.00154251)"
-              >
-                <path
-                  d="M2.251,14.034C2.11,14.087 1.952,14.016 1.898,13.876C1.845,13.736 1.917,13.58 2.058,13.527C2.058,13.527 3.744,12.88 5.9,12.08C6.711,11.778 7.588,11.451 8.471,11.14C9.126,10.91 9.784,10.691 10.416,10.482C12.905,9.659 14.98,9.007 14.98,9.007C14.98,9.007 12.985,9.869 10.565,10.873C9.951,11.128 9.31,11.393 8.664,11.647C7.793,11.99 6.915,12.315 6.104,12.618C3.95,13.422 2.251,14.034 2.251,14.034Z"
-                  style="fill-opacity: 0.64"
-                />
-              </g>
-              <g
-                id="M-Part-Curve"
-                transform="matrix(1.07391,0,0,1.31416,-0.0739067,-2.25344)"
-              >
-                <path
-                  d="M1.931,12L4.259,8.183L1.931,12Z"
-                  style="fill: none; stroke: black; stroke-width: 0.91px"
-                />
-              </g>
-              <g
-                id="M-Part-Curve1"
-                serif:id="M-Part-Curve"
-                transform="matrix(1.07391,0,0,1.31416,-0.0739067,-2.25344)"
-              >
-                <path
-                  d="M5.962,10.017L4.259,8.183L5.962,10.017Z"
-                  style="fill: none; stroke: black; stroke-width: 0.91px"
-                />
-              </g>
-              <g
-                id="M-Part-Curve2"
-                serif:id="M-Part-Curve"
-                transform="matrix(1.07391,0,0,1.31416,-0.0739067,-2.25344)"
-              >
-                <path
-                  d="M7.984,8.183L5.962,10.017L7.984,8.183Z"
-                  style="fill: none; stroke: black; stroke-width: 0.91px"
-                />
-              </g>
-              <g
-                id="V-Part-Curve-Right"
-                transform="matrix(2.18729,0,0,2.62445,-11.0099,-17.9722)"
-              >
-                <path
-                  d="M10.269,11.922C10.319,12.016 10.267,12.126 10.152,12.167C10.038,12.208 9.905,12.164 9.856,12.07L7.548,7.229L10.269,11.922Z"
-                />
-              </g>
-              <g
-                id="V-Part-Curve-Left"
-                transform="matrix(1.11038,-0.0294845,0.037764,1.29822,-0.696417,-1.76366)"
-              >
-                <path
-                  d="M10.536,12.142C10.443,12.334 10.184,12.426 9.957,12.348C9.73,12.269 9.622,12.05 9.715,11.858C9.715,11.858 11.017,9.305 12.194,7.111C12.567,6.416 12.932,5.761 13.23,5.228C13.649,4.476 13.938,3.979 13.938,3.979C13.952,3.949 13.991,3.936 14.025,3.947C14.06,3.959 14.076,3.992 14.062,4.021C14.062,4.021 13.855,4.547 13.53,5.332C13.301,5.888 13.018,6.571 12.707,7.289C11.726,9.55 10.536,12.142 10.536,12.142Z"
-                />
-              </g>
-              <g
-                id="S-Curve"
-                transform="matrix(1.07391,0,0,1.31416,-0.0739067,-2.25344)"
-              >
-                <path
-                  d="M10,8.5C9.793,8.353 9.478,8.19 9.095,8.018C8.896,7.928 8.682,7.84 8.456,7.749C8.232,7.658 7.999,7.57 7.761,7.481C6.901,7.158 5.979,6.872 5.259,6.816C4.868,6.785 4.545,6.808 4.371,6.968C4.203,7.121 4.207,7.381 4.36,7.778C4.553,8.277 4.996,8.957 5.767,9.864C6.128,10.295 6.399,10.66 6.586,10.97C6.8,11.321 6.911,11.603 6.946,11.823C6.985,12.074 6.93,12.258 6.815,12.387C6.681,12.541 6.463,12.633 6.172,12.653C5.628,12.69 4.789,12.478 3.944,12.172C2.486,11.645 1,10.867 1,10.867C1,10.867 2.216,11.384 3.529,11.807C4.499,12.12 5.519,12.387 6.124,12.317C6.268,12.3 6.381,12.264 6.443,12.185C6.5,12.113 6.502,12.012 6.475,11.879C6.435,11.691 6.322,11.454 6.13,11.155C5.943,10.863 5.683,10.514 5.332,10.104C4.324,8.905 3.862,8.074 3.768,7.527C3.703,7.144 3.806,6.878 4.005,6.703C4.268,6.47 4.732,6.382 5.31,6.439C6.07,6.513 7.057,6.808 7.938,7.198C8.174,7.302 8.4,7.415 8.613,7.53C8.827,7.647 9.026,7.765 9.207,7.883C9.554,8.108 9.828,8.322 10,8.5Z"
-                />
-              </g>
-            </g>
-          </svg>
-        </span>
-      </div>
-
-      <!-- Navigation part -->
-      <div id="nav-links">
-        <ul>
-          <li><a href="#about" translation-content="aboutMe">Apie mane</a></li>
-          <li><a href="#skills-and-projects" translation-content="skillsAndProjects">Įgūdžiai ir darbai</a></li>
-        </ul>
-      </div>
-
-      <!-- Translation setter -->
-      <div id="translator-box">
-        <a href="index.html" class="lang-lt" onclick="changeLanguage('lt')">LT</a>
-        <a href="index.html" class="lang-en" onclick="changeLanguage('en')">EN</a>
+    <!-- Page Nav -->
+    <nav class="fixed top-0 right-0">
+      <!-- Page Nav Container -->
+      <div class="flex items-start justify-start space-x-2">
+        <a
+          href="#"
+          class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+          >[About Me]</a
+        >
+        <a
+          href="#projects"
+          class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+          >[Projects]</a
+        >
+        <!-- <a
+          href="index.html"
+          id="langLt"
+          class="px-3 py-2 text-sm font-medium text-black hover:border-b-2 hover:border-slate-300/25 active:bg-slate-400/25 hover:text-white"
+          onclick="changeLanguage('lt')"
+          >[LT]</a
+        >
+        <a
+          href="index.html"
+          id="langEn"
+          class="px-3 py-2 text-sm font-medium text-black hover:border-b-2 hover:border-slate-300/25 active:bg-slate-400/25 hover:text-white hidden"
+          onclick="changeLanguage('en')"
+          >[EN]</a
+        > -->
       </div>
     </nav>
+    <!-- Copyright -->
+    <div class="fixed bottom-0 left-0">
+      <p class="px-3 py-2 text-lg font-medium italic text-black select-none">
+        2024&copy;
+      </p>
+    </div>
+    <!-- About Me -->
+    <div
+      class="bg-gradient-to-br from-teal-800/75 to-teal-300/90 flex flex-col lg:flex-row items-center justify-center min-h-screen"
+    >
+      <div class="container">
+        <div class="bg-green-600/15 p-4 shadow-lg space-y-6">
+          <!-- Image -->
+          <div
+            class="h-48 w-48 bg-cover bg-center bg-no-repeat select-none mx-auto"
+            style="background-image: url('/assets/img/profile/mv.JPG')"
+          >
+            <div
+              class="relative h-56 w-56 bg-slate-500/85 -inset-4 skew-y-6 -z-10 mix-blend-lighten"
+            ></div>
+          </div>
 
-    <!-- About me part -->
-    <section id="about">
-      <div id="profile-picture-socials">
-        <!-- Picture -->
-        <div id="profile-pic-box">
-          <img
-            src="./assets/pictures/ProfilePicture_MV.JPG"
-            id="profile-img"
-            alt="Picture of Martynas Vrubliauskas"
-          />
-        </div>
-        <!-- Socials box -->
-        <div id="socials-box">
-          <h3 translation-content="socialsTitle"></h3>
+          <!-- About Contents -->
+          <h2
+            class="text-stone-950 text-center text-4xl font-extrabold select-none"
+          >
+            Hello, world!<span class="animate-ping duration-[25s]">|</span>
+          </h2>
 
-          <!-- Code related socials -->
-          <div id="socials">
-            <div class="social">
-              <a href="https://github.com/Emcrowz" target="_blank">
-                <span>
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 -0.5 48 48"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    class="socials-icon"
-                  >
-                    <title>Github-color</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g
-                      id="Icons"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Color-"
-                        transform="translate(-700.000000, -560.000000)"
-                        fill="#3E75C3"
-                      >
-                        <path
-                          d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560"
-                          id="Github"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                </span>
-              </a>
-            </div>
+          <p class="text-stone-800 text-center italic text-lg select-none">
+            I am Martynas Vrubliauskas
+          </p>
+          <p
+            class="text-stone-800 text-center text-lg tracking-widest select-none"
+          >
+            Junior Web Developer
+          </p>
+          <p class="text-black select-none text-justify text-lg md:text-center">
+            Focusing on creating web applications and solutions. Learning and
+            evolving with every project. Web development in full stack is one of
+            my passions - from design to coding. My
+            <span class="font-semibold">primary stack is .NET</span>, but can
+            also work with JavaScript related stacks.
+          </p>
 
-            <!-- <div class="social">
-              <a href="https://codepen.io/emcrowz" target="_blank">
-                <span>
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 48 48"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    class="socials-icon"
-                  >
-                    <title>Codepen-color</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g
-                      id="Icons"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Color-"
-                        transform="translate(-800.000000, -160.000000)"
-                        fill="#0B0B0A"
-                      >
-                        <path
-                          d="M847.982,176.419 C847.9775,176.3875 847.97,176.359 847.9655,176.329 C847.955,176.2705 847.9445,176.212 847.9295,176.1565 C847.9205,176.122 847.907,176.089 847.8965,176.056 C847.88,176.005 847.8635,175.9555 847.844,175.906 C847.8305,175.8715 847.814,175.837 847.7975,175.8055 C847.7765,175.7575 847.754,175.7125 847.727,175.669 C847.709,175.636 847.688,175.6045 847.6685,175.573 C847.6415,175.5295 847.613,175.4875 847.5815,175.447 C847.559,175.417 847.535,175.387 847.511,175.3585 C847.478,175.3195 847.4435,175.282 847.4075,175.246 C847.3805,175.219 847.355,175.1905 847.3265,175.1665 C847.2875,175.132 847.2485,175.099 847.2095,175.0675 C847.178,175.0435 847.148,175.0195 847.1165,174.997 C847.1045,174.9895 847.094,174.979 847.082,174.9715 L825.1445,160.3465 C824.4515,159.8845 823.55,159.8845 822.8555,160.3465 L800.9195,174.9715 C800.9075,174.979 800.897,174.9895 800.885,174.997 C800.852,175.0195 800.822,175.0435 800.792,175.0675 C800.7515,175.099 800.7125,175.132 800.675,175.1665 C800.6465,175.1905 800.6195,175.219 800.5925,175.246 C800.5565,175.282 800.522,175.3195 800.4905,175.3585 C800.465,175.387 800.441,175.417 800.4185,175.447 C800.3885,175.4875 800.36,175.5295 800.333,175.573 C800.312,175.6045 800.2925,175.636 800.273,175.669 C800.2475,175.7125 800.225,175.7575 800.2025,175.8055 C800.1875,175.837 800.171,175.8715 800.1575,175.906 C800.1365,175.9555 800.12,176.005 800.1035,176.056 C800.093,176.089 800.081,176.122 800.072,176.1565 C800.057,176.212 800.0465,176.2705 800.036,176.329 C800.03,176.359 800.0225,176.3875 800.0195,176.419 C800.0075,176.506 800,176.596 800,176.6875 L800,191.3125 C800,191.4025 800.0075,191.4925 800.0195,191.5825 C800.0225,191.611 800.03,191.641 800.036,191.671 C800.0465,191.7295 800.057,191.7865 800.072,191.8435 C800.081,191.878 800.093,191.911 800.1035,191.944 C800.12,191.9935 800.1365,192.0445 800.1575,192.0955 C800.171,192.1285 800.1875,192.1615 800.2025,192.1945 C800.225,192.241 800.2475,192.286 800.273,192.3325 C800.2925,192.364 800.312,192.3955 800.333,192.427 C800.36,192.4705 800.3885,192.511 800.4185,192.5515 C800.441,192.583 800.465,192.613 800.4905,192.6415 C800.522,192.679 800.5565,192.718 800.5925,192.7525 C800.6195,192.781 800.6465,192.808 800.675,192.8335 C800.7125,192.868 800.7515,192.901 800.792,192.9325 C800.822,192.9565 800.852,192.9805 800.885,193.003 C800.897,193.0105 800.9075,193.021 800.9195,193.0285 L822.8555,207.6535 C823.202,207.8845 823.601,208 824,208 C824.399,208 824.798,207.8845 825.1445,207.6535 L847.082,193.0285 C847.094,193.021 847.1045,193.0105 847.1165,193.003 C847.148,192.9805 847.178,192.9565 847.2095,192.9325 C847.2485,192.901 847.2875,192.868 847.3265,192.8335 C847.355,192.808 847.3805,192.781 847.4075,192.7525 C847.4435,192.718 847.478,192.679 847.511,192.6415 C847.535,192.613 847.559,192.583 847.5815,192.5515 C847.613,192.511 847.6415,192.4705 847.6685,192.427 C847.688,192.3955 847.709,192.364 847.727,192.3325 C847.754,192.286 847.7765,192.241 847.7975,192.1945 C847.814,192.1615 847.8305,192.1285 847.844,192.0955 C847.8635,192.0445 847.88,191.9935 847.8965,191.944 C847.907,191.911 847.9205,191.878 847.9295,191.8435 C847.9445,191.7865 847.955,191.7295 847.9655,191.671 C847.97,191.641 847.9775,191.611 847.982,191.5825 C847.994,191.4925 848,191.4025 848,191.3125 L848,176.6875 C848,176.596 847.994,176.506 847.982,176.419 L847.982,176.419 L847.982,176.419 Z M826.0625,165.9175 L842.2235,176.6905 L835.0055,181.519 L826.0625,175.537 L826.0625,165.9175 L826.0625,165.9175 Z M821.9375,165.9175 L821.9375,175.537 L812.996,181.519 L805.7765,176.6905 L821.9375,165.9175 L821.9375,165.9175 Z M804.125,180.5485 L809.2865,184 L804.125,187.4515 L804.125,180.5485 L804.125,180.5485 Z M821.9375,202.0825 L805.7765,191.3095 L812.996,186.4825 L821.9375,192.463 L821.9375,202.0825 L821.9375,202.0825 Z M824,188.8795 L816.7055,184 L824,179.1205 L831.296,184 L824,188.8795 L824,188.8795 Z M826.0625,202.0825 L826.0625,192.463 L835.0055,186.4825 L842.2235,191.3095 L826.0625,202.0825 L826.0625,202.0825 Z M843.875,187.4515 L838.715,184 L843.875,180.5485 L843.875,187.4515 L843.875,187.4515 Z"
-                          id="Codepen"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                </span>
-              </a>
-            </div> -->
+          <div
+            class="flex max-md:flex-col space-x-2 max-md:space-y-2 text-center justify-around"
+          >
+            <p class="text-stone-800 text-lg select-none">
+              Location:<br />Vilnius, Lithuania
+            </p>
+            <p class="text-stone-800 text-lg select-none">
+              Email:<br />
+              <span class="select-all">martynas.vru@gmail.com</span>
+            </p>
+          </div>
 
-            <!-- General socials -->
-            <div class="social">
+          <!-- About Socials -->
+          <ul class="flex items-center justify-center">
+            <li class="p-2">
               <a
                 href="https://www.linkedin.com/in/martynasvru/"
                 target="_blank"
               >
-                <span>
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 -2 44 44"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    class="socials-icon"
-                  >
-                    <title>LinkedIn-color</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g
-                      id="Icons"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Color-"
-                        transform="translate(-702.000000, -265.000000)"
-                        fill="#007EBB"
-                      >
-                        <path
-                          d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
-                          id="LinkedIn"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 50 50"
+                  class="h-10 w-10 hover:invert transition duration-200"
+                >
+                  <path
+                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                  ></path>
+                </svg>
               </a>
-            </div>
-
-            <div class="social">
-              <a
-                href="https://www.facebook.com/martynas.vrubliauskas.1"
-                target="_blank"
-              >
-                <span>
-                  <svg
-                    width="100%"
-                    height="100%"
-                    viewBox="0 0 48 48"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    class="socials-icon"
-                  >
-                    <title>Facebook-color</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g
-                      id="Icons"
-                      stroke="none"
-                      stroke-width="1"
-                      fill="none"
-                      fill-rule="evenodd"
-                    >
-                      <g
-                        id="Color-"
-                        transform="translate(-200.000000, -160.000000)"
-                        fill="#4460A0"
-                      >
-                        <path
-                          d="M225.638355,208 L202.649232,208 C201.185673,208 200,206.813592 200,205.350603 L200,162.649211 C200,161.18585 201.185859,160 202.649232,160 L245.350955,160 C246.813955,160 248,161.18585 248,162.649211 L248,205.350603 C248,206.813778 246.813769,208 245.350955,208 L233.119305,208 L233.119305,189.411755 L239.358521,189.411755 L240.292755,182.167586 L233.119305,182.167586 L233.119305,177.542641 C233.119305,175.445287 233.701712,174.01601 236.70929,174.01601 L240.545311,174.014333 L240.545311,167.535091 C239.881886,167.446808 237.604784,167.24957 234.955552,167.24957 C229.424834,167.24957 225.638355,170.625526 225.638355,176.825209 L225.638355,182.167586 L219.383122,182.167586 L219.383122,189.411755 L225.638355,189.411755 L225.638355,208 L225.638355,208 Z"
-                          id="Facebook"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                </span>
+            </li>
+            <li class="p-2">
+              <a href="https://github.com/Emcrowz" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 48 48"
+                  class="h-10 w-10 hover:invert transition duration-200"
+                >
+                  <path
+                    d="M44,24c0,8.96-5.88,16.54-14,19.08V38c0-1.71-0.72-3.24-1.86-4.34c5.24-0.95,7.86-4,7.86-9.66c0-2.45-0.5-4.39-1.48-5.9 c0.44-1.71,0.7-4.14-0.52-6.1c-2.36,0-4.01,1.39-4.98,2.53C27.57,14.18,25.9,14,24,14c-1.8,0-3.46,0.2-4.94,0.61 C18.1,13.46,16.42,12,14,12c-1.42,2.28-0.84,4.74-0.3,6.12C12.62,19.63,12,21.57,12,24c0,5.66,2.62,8.71,7.86,9.66 c-0.67,0.65-1.19,1.44-1.51,2.34H16c-1.44,0-2-0.64-2.77-1.68c-0.77-1.04-1.6-1.74-2.59-2.03c-0.53-0.06-0.89,0.37-0.42,0.75 c1.57,1.13,1.68,2.98,2.31,4.19C13.1,38.32,14.28,39,15.61,39H18v4.08C9.88,40.54,4,32.96,4,24C4,12.95,12.95,4,24,4 S44,12.95,44,24z"
+                  ></path>
+                </svg>
               </a>
-            </div>
+            </li>
+          </ul>
 
-            <!-- <div class="social">
-              <a href="https://twitter.com/emcrowz" target="_blank"
-                ><span>X</span></a
+          <!-- About Buttons -->
+          <div class="flex justify-center">
+            <button
+              id="btnSkillsModal"
+              class="p-3 rounded-md shadow-sm text-white bg-green-700/90 hover:bg-teal-600/75 active:translate-y-1 transition duration-200"
+            >
+              Tech stacks and skills
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech stack [Modal Window] -->
+      <div
+        id="skillsModal"
+        class="hidden max-h-full w-4/5 absolute overflow-y-auto bg-scroll"
+      >
+        <!-- Container -->
+        <div class="bg-gray-200 p-4 rounded-lg mx-auto space-y-2">
+          <!-- Close button/Symbol -->
+          <span
+            id="closeSkillsModal"
+            class="cursor-pointer text-4xl hover:invert float-right"
+            >&times;</span
+          >
+
+          <!-- Tech & Skills Contents -->
+          <h2
+            class="text-stone-900 text-center text-4xl font-extrabold select-none"
+          >
+            Tech Stacks and Skills
+          </h2>
+
+          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
+            .NET
+          </h3>
+          <ul class="flex-col">
+            <li><span class="select-none">C# (OOP)</span></li>
+            <li><span class="select-none">ASP.NET Core</span></li>
+            <li><span class="select-none">ASP.NET Core MVC</span></li>
+            <li>
+              <span class="select-none"
+                >ASP.NET Core API (REST and Minimal)</span
               >
-            </div>
+            </li>
+            <li><span class="select-none">Blazor</span></li>
+            <li>
+              <span class="select-none">Entity Framework Core (DBO)</span>
+            </li>
+            <li><span class="select-none">xUnit (Testing)</span></li>
+          </ul>
+          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
+            JavaScript
+          </h3>
+          <ul class="flex-col">
+            <li><span class="select-none">ReactJS</span></li>
+            <li><span class="select-none">NodeJS</span></li>
+            <li><span class="select-none">TypeScript</span></li>
+          </ul>
+          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
+            Other
+          </h3>
+          <ul class="flex-col">
+            <li>
+              <span class="select-none">SQL (MSSQL, PostgreSQL, MySQL)</span>
+            </li>
+            <li><span class="select-none">NoSQL (MongoDB)</span></li>
+            <li><span class="select-none">Docker</span></li>
+            <li><span class="select-none">VCS (Git & GitHub)</span></li>
+          </ul>
+          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
+            Libraries
+          </h3>
+          <ul class="flex-col">
+            <li><span class="select-none">Serilog (.NET)</span></li>
+            <li><span class="select-none">Dapper (.NET)</span></li>
+          </ul>
+          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
+            Design (UI/UX)
+          </h3>
+          <ul class="flex-col">
+            <li><span class="select-none">Tailwind CSS</span></li>
+            <li><span class="select-none">Bootstrap 5</span></li>
+            <li><span class="select-none">Figma</span></li>
+            <li>
+              <span class="select-none">Affinity Designer/Photo/Publisher</span>
+            </li>
+          </ul>
+          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
+            Familiar with
+          </h3>
+          <ul class="flex-col">
+            <li><span class="select-none">Linux</span></li>
+            <li><span class="select-none">Azure</span></li>
+            <li><span class="select-none">.NET MAUI</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-            <div class="social">
-              <a href="https://discord.com/users/emcrowz" target="_blank"
-                ><span>Discord</span></a
+    <!-- Projects & Work Showcase -->
+    <div
+      class="bg-gradient-to-bl from-teal-300/90 to-teal-800/75 flex justify-center min-h-screen"
+      id="projects"
+    >
+      <!-- Projects Container -->
+      <div class="container mt-14">
+        <div class="bg-slate-600/20 p-4 shadow-lg mx-auto">
+          <!-- Projects Title -->
+          <h2
+            class="text-stone-900 text-center text-4xl font-extrabold select-none"
+          >
+            Work and projects
+          </h2>
+          <!-- Projects Nav/Filter -->
+          <nav class="flex justify-center my-6 border-y-2 border-slate-800/30">
+            <ul class="flex space-x-4 my-2">
+              <li
+                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
               >
-            </div> -->
-          </div>
+                <a href="#all">All</a>
+              </li>
+              <li
+                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+              >
+                <a href="#web">Web (ASP.NET / JavaScript)</a>
+              </li>
+              <li
+                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+              >
+                <a href="#uiux">UI/UX</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Projects Content -->
+          <!-- Container -->
+          <div class="flex flex-wrap gap-4 justify-evenly">
+            <!-- Content -->
 
-          <h3 translation-content="socialsEmail"></h3>
-          <div id="contacts">
-            <div class="contact">
-              <a href="mailto:Martynas.Vru@gmail.com">Martynas.Vru@gmail.com</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- About me text -->
-      <div id="profile-desc-box">
-        <h1 translation-content="profileGreet"></h1>
-        <p translation-content="profileIntro"></p>
-        <p translation-content="profileAge"></p>
-        <p translation-content="profileLocation"></p>
-        <p translation-content="profileEducation"></p>
-        <ul>
-          <li>
-            <strong translation-content="profileEduBachelors"></strong> - <strong translation-content="profileEduBachelors-subj"></strong> - <em translation-content="profileEduBachelors-desc"></em>
-          </li>
-          <li>
-            <strong translation-content="profileEduMasters"></strong> - <strong translation-content="profileEduMasters-subj"></strong> - <em translation-content="profileEduMasters-desc"></em>
-          </li>
-        </ul>
-        <p translation-content="profileWhatIDo"></p>
-      </div>
-    </section>
-
-    <!-- Skills and projects -->
-    <section id="skills-and-projects">
-      <div id="skills-container">
-        <h2 translation-content="profileSkillsAndExperience-title"></h2>
-        <!-- Programming -->
-        <div class="skills skillset-programming">
-          <h3 translation-content="profileSkillsAndExperience-programming"></h3>
-          <div class="skill">
-            <h4>C#</h4>
-            <div class="progress skill-04"></div>
-          </div>
-          <div class="skill">
-            <h4>JavaScript/TypeScript</h4>
-            <div class="progress skill-03"></div>
-          </div>
-          
-          <div class="skill">
-            <h4>ASP.NET Core</h4>
-            <div class="progress skill-03"></div>
-          </div>
-          <div class="skill">
-            <h4>ReactJS</h4>
-            <div class="progress skill-02"></div>
-          </div>
-        </div>
-        <!-- Design -->
-        <div class="skills skillset-design">
-          <h3 translation-content="profileSkillsAndExperience-design"></h3>
-          <div class="skill">
-            <h4>HTML/CSS</h4>
-            <div class="progress skill-04"></div>
-          </div>
-          <div class="skill">
-            <h4>UI/UX</h4>
-            <div class="progress skill-03"></div>
-          </div>
-        </div>
-        <!-- Productivity -->
-        <div class="skills skillset-productivity">
-          <h3 translation-content="profileSkillsAndExperience-productivity"></h3>
-          <div class="skill">
-            <h4>MS Office <br />(<em>Word, Excell, ...</em>)</h4>
-            <div class="progress skill-05"></div>
-          </div>
-          <div class="skill">
-            <h4>GitHub</h4>
-            <div class="progress skill-03"></div>
-          </div>
-          <div class="skill">
-            <h4>Figma</h4>
-            <div class="progress skill-02"></div>
-          </div>
-        </div>
-      </div>
-
-      <div id="work-and-projects">
-        <h2 translation-content="profileProjects-title"></h2>
-        <div id="work-holder">
-          <!-- Work and projects -->
-          <div class="work-proj-box num-01">
-            <div class="work-proj-desc">
-              <h3 translation-content="profileProject-title-01"></h3>
-              <p translation-content="profileProject-desc-01"></p>
-              <div class="work-proj-preview">
-                <a href="https://emcrowz.github.io/" target="_blank">Demo: GitHub pages</a>
-                <a href="https://github.com/Emcrowz/Emcrowz.github.io" target="_blank">GitHub</a>
+            <!-- Image(s) -->
+            <div class="relative group">
+              <img
+                src="/assets/img/projects/PortfolioShowcasePicture.png"
+                alt="placeholder"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalOne"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">Portfolio page</p>
+                    <p class="text-xs">
+                      A portfolio static page hosted via GitHub pages
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <!-- Project One Info [Modal Window] -->
+            <div
+              id="projectModalOne"
+              class="hidden absolute max-h-full w-4/5 overflow-y-auto bg-scroll z-10"
+            >
+              <!-- Container -->
+              <div class="bg-gray-200 p-4 rounded-lg mx-auto space-y-2">
+                <!-- Close button/Symbol -->
+                <span
+                  id="closeProjectModalOne"
+                  class="cursor-pointer text-4xl hover:invert float-right"
+                  >&times;</span
+                >
 
-          <div class="work-proj-box num-02">
-            <div class="work-proj-desc">
-              <h3 translation-content="profileProject-title-02"></h3>
-              <p translation-content="profileProject-desc-02"></p>
-              <div class="work-proj-preview">
-                <a
-                  href="https://vilnius-700-quiz-mv.netlify.app/"
-                  target="_blank"><span translation-content="profileProject-desc-02-link-01"></span>
-                </a>
-                <a
-                  href="https://vilnius-700-quiz-mv-2.netlify.app/"
-                  target="_blank"><span translation-content="profileProject-desc-02-link-02"></span>
-                </a>
-                <a
-                  href="https://vcb-literaturine-viktorina.netlify.app/"
-                  target="_blank"><span translation-content="profileProject-desc-02-link-03"></span>
-                </a>
-                <a href="https://github.com/Emcrowz/Vilnius700-Quiz" target="_blank">GitHub</a>
+                <!-- Tech & Skills Contents -->
+                <h2
+                  class="text-stone-900 text-center text-4xl font-extrabold select-none"
+                >
+                  Portfolio page
+                </h2>
+                <p class="text-center tracking-widest font-bold">
+                  [In-Development]
+                </p>
+                <p class="text-center italic font-extralight">
+                  2024-10 - 2024-10
+                </p>
+                <p class="text-center font-semibold">
+                  Tech stack used: HTML/JavaScript + TailwindCSS
+                </p>
+                <p class="text-justify">
+                  A simple landing/portfolio page to showcase my development
+                  skills. Not much to add to it, pretty much speaks for it self.
+                  Hosted with GitHub pages.
+                </p>
+                <br />
+                <h4 class="text-center font-semibold">Lessons Learned:</h4>
+                <ul>
+                  <li>General HTML</li>
+                  <li>JavaScript DOM</li>
+                  <li>TailwindCSS</li>
+                </ul>
+                <br />
+                <p class="italic">
+                  P.S.: Project will be redone on Blazor with Content Management
+                  CRUD operations. Current version is simple static page.
+                </p>
+                <h4 class="text-center text-lg font-semibold">Links</h4>
+                <ul class="flex justify-center">
+                  <li>
+                    <a
+                      href="https://github.com/Emcrowz/Emcrowz.github.io"
+                      target="_blank"
+                      class="text-center"
+                    >
+                      GitHub (Code)
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
+
+            <!--  -->
+            <div class="relative group">
+              <img
+                src="/assets/img/projects/ProjectLiteratureTrivia04.png"
+                alt="placeholder"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalTwo"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">Trivia Apps</p>
+                    <p class="text-xs">
+                      Simple trivia apps created with ReactJS for library events
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project One Info [Modal Window] -->
+            <div
+              id="projectModalTwo"
+              class="hidden absolute max-h-full w-4/5 overflow-y-auto bg-scroll z-10"
+            >
+              <!-- Container -->
+              <div class="bg-gray-200 p-4 rounded-lg mx-auto space-y-2">
+                <!-- Close button/Symbol -->
+                <span
+                  id="closeProjectModalTwo"
+                  class="cursor-pointer text-4xl hover:invert float-right"
+                  >&times;</span
+                >
+
+                <!-- Tech & Skills Contents -->
+                <h2
+                  class="text-stone-900 text-center text-4xl font-extrabold select-none"
+                >
+                  Trivia Apps
+                </h2>
+                <p class="text-center tracking-widest font-bold">[Finished]</p>
+                <p class="text-center italic font-extralight">
+                  2023-08; 2024-02 - 2024-03
+                </p>
+                <p class="text-center font-semibold">
+                  Tech stack used: ReactJS, Redux & Firebase
+                </p>
+                <p class="text-justify">
+                  Simple trivia applications created with ReactJS for hosted
+                  events at Vilnius municipal library. One variant is to
+                  commemorate Vilnius 700th birthday with 22 trivia questions
+                  and other variation was for a hosted Literature trivia game.
+                </p>
+                <br />
+                <h4 class="text-center font-semibold">Lessons Learned:</h4>
+                <ul>
+                  <li>ReactJS Development</li>
+                  <li>JavaScript DOM</li>
+                  <li>CSS Modules</li>
+                  <li>Redux</li>
+                  <li>Firebase Development</li>
+                  <li>Hosting Frontend applications with Netlify</li>
+                </ul>
+                <br />
+                <h4 class="text-center text-lg font-semibold">Links</h4>
+                <ul class="flex gap-4 flex-wrap justify-center">
+                  <li>
+                    <a
+                      href="https://vilnius-700-quiz-mv.netlify.app/"
+                      target="_blank"
+                      >Vilnius700 Quiz (Without Timer)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vilnius-700-quiz-mv-2.netlify.app/"
+                      target="_blank"
+                      >Vilnius700 Quiz (With Timer)</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://vcb-literaturine-viktorina.netlify.app/"
+                      target="_blank"
+                      >Literature Quiz</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/Emcrowz/Vilnius700-Quiz"
+                      target="_blank"
+                      >GitHub (Code)</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  -->
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer part of the content -->
-    <footer>
-      <div id="footer-box">
-        <!-- Contacts -->
-      </div>
-
-      <!-- Copyright, to the top of page and Time -->
-      <div id="copyright">
-        <p>
-          2024&copy; Martynas Vrubliauskas.<br />
-          <span translation-content="footer-copyright"></span>
-        </p>
-        <p id="version">
-          <span translation-content="footer-version"></span>
-          <br />
-          <span translation-content="footer-created-with"></span>
-        </p>
-        <span id="time"></span>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <!-- General script for basic stuff - like date setting, age calculation and etc. -->
-    <script type="text/javascript" src="scripts/portfolioManager.js"></script>
-    <!-- Script that changes language of the site. Still on a TO DO list. -->
-    <script type="text/javascript" src="scripts/translate.js"></script>
+    </div>
+    <script src="/scripts/contentManager.js"></script>
   </body>
 </html>

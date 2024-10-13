@@ -1,9 +1,29 @@
-# Portfolio Page
+# Portfolio Page - Static Version
 
-LT:
-Asmeninė portfolio svetainė/puslapis patalpintas per GitHub pages. Statiniu būdu sukurtas puslapis - HTML/CSS/JavaScript.
+## Theme / Core idea
 
-EN:
-A personal portfolio  amd GitHub pages deployment test. Static type webpage made only with HTML/CSS/JavaScript.
+A portfolio page customised using TailwindCSS.
 
-https://Emcrowz.github.io
+## Tech Stack
+
+**Client/Server:** HTML, JavaScript, Tailwind CSS
+
+## Roadmap
+
+- ~~Refactor old page and relplace with new version utilising TailwindCSS (Finished: 2024-10)~~
+- Clean code and refactor to make code cleaner [ Upcoming ]
+- Transfer static page to the Blazor app
+
+## Lessons Learned
+
+- HTML Refresher and general development
+- JavaScript DOM
+- TailwindCSS
+
+## Appendix
+
+P.S.: Project will be redone on Blazor with Content Management CRUD operations. Current version is simple static page.
+
+## Authors
+
+- Martynas Vrubliauskas [@emcrowz](https://www.github.com/emcrowz)
