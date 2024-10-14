@@ -11,6 +11,7 @@ A portfolio page customised using TailwindCSS.
 ## Roadmap
 
 - ~~Refactor old page and relplace with new version utilising TailwindCSS (Finished: 2024-10)~~
+- Fix the responsive design layout. On mobile phones doesn't look as good than on the widescreens. [ Doing ]
 - Clean code and refactor to make code cleaner [ Upcoming ]
 - Transfer static page to the Blazor app
 
