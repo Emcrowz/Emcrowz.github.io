@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth overflow-hidden max-sm:overflow-auto">
+<html lang="en" class="scroll-smooth overflow-hidden max-md:overflow-auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/tailwindstyles.css" />
-    <title>Martynas Vrubliauskas | Portfolio</title>
+    <title>Martynas Vrubliauskas | About Me</title>
   </head>
   <body>
     <!-- Page Nav -->
-    <nav class="fixed top-0 right-0">
+    <nav class="flex absolute right-0 justify-between">
       <!-- Page Nav Container -->
       <div class="flex items-start justify-start space-x-2">
         <a
-          href="#"
+          href="index.html"
           class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
           >[About Me]</a
         >
         <a
-          href="#projects"
+          href="projects.html"
           class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
           >[Projects]</a
         >
@@ -38,11 +38,144 @@
       </div>
     </nav>
     <!-- Copyright -->
-    <div class="fixed bottom-0 left-0">
-      <p class="px-3 py-2 text-lg font-medium italic text-black select-none">
-        2024&copy;
-      </p>
+
+    <!-- Tech stack [Modal Window] -->
+    <div
+      id="skillsModal"
+      class="hidden h-full w-full fixed items-center justify-center overflow-y-auto bg-scroll bg-black/30 z-50"
+    >
+      <!-- Container -->
+      <div class="bg-gray-200 p-4 rounded-lg w-4/5">
+        <!-- Close button/Symbol -->
+        <span
+          id="closeSkillsModal"
+          class="cursor-pointer text-4xl hover:invert float-right"
+          >&times;</span
+        >
+
+        <!-- Tech & Skills Contents -->
+        <h2
+          class="text-stone-900 pb-4 text-center text-4xl font-extrabold select-none"
+        >
+          Tech Stacks and Skills
+        </h2>
+
+        <div
+          class="flex max-lg:flex-wrap max-lg:flex-col justify-evenly flex-grow"
+        >
+          <div
+            class="border-r-2 pr-4 max-lg:pr-0 max-lg:border-r-0 max-lg:border-b-2 max-lg:pb-4 border-green-800"
+          >
+            <h3
+              class="text-stone-800 pb-2 max-lg:text-center font-bold text-2xl select-none"
+            >
+              .NET
+            </h3>
+            <ul role="list">
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">C# (OOP)</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">ASP.NET Core</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">ASP.NET Core MVC</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">ASP.NET Core API</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Blazor</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Entity Framework Core (ORM)</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Dapper (ORM)</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">nUnit (Testing)</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">xUnit (Testing)</span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="border-r-2 px-4 max-lg:px-0 max-lg:border-r-0 max-lg:border-b-2 max-lg:pb-4 border-green-800"
+          >
+            <h3
+              class="text-stone-800 pb-2 max-lg:text-center font-bold text-2xl select-none"
+            >
+              JavaScript
+            </h3>
+            <ul>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">ReactJS</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">NodeJS</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">TypeScript</span>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="border-r-2 px-4 max-lg:px-0 max-lg:border-r-0 max-lg:border-b-2 max-lg:pb-4 border-green-800"
+          >
+            <h3
+              class="text-stone-800 pb-2 max-lg:text-center font-bold text-2xl select-none"
+            >
+              Design (UI/UX)
+            </h3>
+            <ul>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Tailwind CSS</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Bootstrap 5</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Figma</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none"
+                  >Affinity Designer/Photo/Publisher</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="pl-4 max-lg:pl-0">
+            <h3
+              class="text-stone-800 pb-2 max-lg:text-center font-bold text-2xl select-none"
+            >
+              Other
+            </h3>
+            <ul>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none"
+                  >Relational Databases: SQL (MSSQL, PostgreSQL, MySQL)</span
+                >
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">NoSQL with MongoDB, Firebase</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Version Control: Git and GitHub</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Virtualization: Docker</span>
+              </li>
+              <li class="list-disc max-lg:list-none">
+                <span class="select-none">Familiar with: Linux</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+
     <!-- About Me -->
     <div
       class="bg-gradient-to-br from-teal-800/75 to-teal-300/90 flex flex-col lg:flex-row items-center justify-center min-h-screen"
@@ -72,14 +205,16 @@
           <p
             class="text-stone-800 text-center text-lg tracking-widest select-none"
           >
-            Junior Web Developer
+            Junior Web/.NET Developer
           </p>
           <p class="text-black select-none text-justify text-lg md:text-center">
-            Focusing on creating web applications and solutions. Learning and
-            evolving with every project. Web development in full stack is one of
-            my passions - from design to coding. My
-            <span class="font-semibold">primary stack is .NET</span>, but can
-            also work with JavaScript related stacks.
+            Focused on creating software and various web applications whether be
+            for learning or specific business needs. Software development,
+            specifically web development in full stack, became a passion of mine
+            - from design phase to deployement.
+            <br />
+            <span class="font-semibold">Primary stack of mine is .NET</span>,
+            but can also work with JavaScript related stacks.
           </p>
 
           <div
@@ -146,325 +281,8 @@
           </div>
         </div>
       </div>
-
-      <!-- Tech stack [Modal Window] -->
-      <div
-        id="skillsModal"
-        class="hidden max-h-full w-4/5 absolute overflow-y-auto bg-scroll"
-      >
-        <!-- Container -->
-        <div class="bg-gray-200 p-4 rounded-lg mx-auto space-y-2">
-          <!-- Close button/Symbol -->
-          <span
-            id="closeSkillsModal"
-            class="cursor-pointer text-4xl hover:invert float-right"
-            >&times;</span
-          >
-
-          <!-- Tech & Skills Contents -->
-          <h2
-            class="text-stone-900 text-center text-4xl font-extrabold select-none"
-          >
-            Tech Stacks and Skills
-          </h2>
-
-          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
-            .NET
-          </h3>
-          <ul class="flex-col">
-            <li><span class="select-none">C# (OOP)</span></li>
-            <li><span class="select-none">ASP.NET Core</span></li>
-            <li><span class="select-none">ASP.NET Core MVC</span></li>
-            <li>
-              <span class="select-none"
-                >ASP.NET Core API (REST and Minimal)</span
-              >
-            </li>
-            <li><span class="select-none">Blazor</span></li>
-            <li>
-              <span class="select-none">Entity Framework Core (DBO)</span>
-            </li>
-            <li><span class="select-none">xUnit (Testing)</span></li>
-          </ul>
-          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
-            JavaScript
-          </h3>
-          <ul class="flex-col">
-            <li><span class="select-none">ReactJS</span></li>
-            <li><span class="select-none">NodeJS</span></li>
-            <li><span class="select-none">TypeScript</span></li>
-          </ul>
-          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
-            Other
-          </h3>
-          <ul class="flex-col">
-            <li>
-              <span class="select-none">SQL (MSSQL, PostgreSQL, MySQL)</span>
-            </li>
-            <li><span class="select-none">NoSQL (MongoDB)</span></li>
-            <li><span class="select-none">Docker</span></li>
-            <li><span class="select-none">VCS (Git & GitHub)</span></li>
-          </ul>
-          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
-            Libraries
-          </h3>
-          <ul class="flex-col">
-            <li><span class="select-none">Serilog (.NET)</span></li>
-            <li><span class="select-none">Dapper (.NET)</span></li>
-          </ul>
-          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
-            Design (UI/UX)
-          </h3>
-          <ul class="flex-col">
-            <li><span class="select-none">Tailwind CSS</span></li>
-            <li><span class="select-none">Bootstrap 5</span></li>
-            <li><span class="select-none">Figma</span></li>
-            <li>
-              <span class="select-none">Affinity Designer/Photo/Publisher</span>
-            </li>
-          </ul>
-          <h3 class="text-stone-800 text-center font-bold text-2xl select-none">
-            Familiar with
-          </h3>
-          <ul class="flex-col">
-            <li><span class="select-none">Linux</span></li>
-            <li><span class="select-none">Azure</span></li>
-            <li><span class="select-none">.NET MAUI</span></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
-    <!-- Projects & Work Showcase -->
-    <div
-      class="bg-gradient-to-bl from-teal-300/90 to-teal-800/75 flex justify-center min-h-screen"
-      id="projects"
-    >
-      <!-- Projects Container -->
-      <div class="container mt-14">
-        <div class="bg-slate-600/20 p-4 shadow-lg mx-auto">
-          <!-- Projects Title -->
-          <h2
-            class="text-stone-900 text-center text-4xl font-extrabold select-none"
-          >
-            Work and projects
-          </h2>
-          <!-- Projects Nav/Filter -->
-          <nav class="flex justify-center my-6 border-y-2 border-slate-800/30">
-            <ul class="flex space-x-4 my-2">
-              <li
-                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
-              >
-                <a href="#all">All</a>
-              </li>
-              <li
-                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
-              >
-                <a href="#web">Web (ASP.NET / JavaScript)</a>
-              </li>
-              <li
-                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
-              >
-                <a href="#uiux">UI/UX</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- Projects Content -->
-          <!-- Container -->
-          <div class="flex flex-wrap gap-4 justify-evenly">
-            <!-- Content -->
-
-            <!-- Image(s) -->
-            <div class="relative group">
-              <img
-                src="/assets/img/projects/PortfolioShowcasePicture.png"
-                alt="placeholder"
-                class="max-w-64 max-h-44"
-              />
-              <div
-                id="btnProjectModalOne"
-                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
-              >
-                <div class="flex justify-around p-2 h-full select-none">
-                  <div class="flex flex-col justify-center">
-                    <p class="text-sm font-bold">Portfolio page</p>
-                    <p class="text-xs">
-                      A portfolio static page hosted via GitHub pages
-                    </p>
-                  </div>
-                  <div class="flex items-center">
-                    <span>&#10095;</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project One Info [Modal Window] -->
-            <div
-              id="projectModalOne"
-              class="hidden absolute max-h-full w-4/5 overflow-y-auto bg-scroll z-10"
-            >
-              <!-- Container -->
-              <div class="bg-gray-200 p-4 rounded-lg mx-auto space-y-2">
-                <!-- Close button/Symbol -->
-                <span
-                  id="closeProjectModalOne"
-                  class="cursor-pointer text-4xl hover:invert float-right"
-                  >&times;</span
-                >
-
-                <!-- Tech & Skills Contents -->
-                <h2
-                  class="text-stone-900 text-center text-4xl font-extrabold select-none"
-                >
-                  Portfolio page
-                </h2>
-                <p class="text-center tracking-widest font-bold">
-                  [In-Development]
-                </p>
-                <p class="text-center italic font-extralight">
-                  2024-10 - 2024-10
-                </p>
-                <p class="text-center font-semibold">
-                  Tech stack used: HTML/JavaScript + TailwindCSS
-                </p>
-                <p class="text-justify">
-                  A simple landing/portfolio page to showcase my development
-                  skills. Not much to add to it, pretty much speaks for it self.
-                  Hosted with GitHub pages.
-                </p>
-                <br />
-                <h4 class="text-center font-semibold">Lessons Learned:</h4>
-                <ul>
-                  <li>General HTML</li>
-                  <li>JavaScript DOM</li>
-                  <li>TailwindCSS</li>
-                </ul>
-                <br />
-                <p class="italic">
-                  P.S.: Project will be redone on Blazor with Content Management
-                  CRUD operations. Current version is simple static page.
-                </p>
-                <h4 class="text-center text-lg font-semibold">Links</h4>
-                <ul class="flex justify-center">
-                  <li>
-                    <a
-                      href="https://github.com/Emcrowz/Emcrowz.github.io"
-                      target="_blank"
-                      class="text-center"
-                    >
-                      GitHub (Code)
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!--  -->
-            <div class="relative group">
-              <img
-                src="/assets/img/projects/ProjectLiteratureTrivia04.png"
-                alt="placeholder"
-                class="max-w-64 max-h-44"
-              />
-              <div
-                id="btnProjectModalTwo"
-                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
-              >
-                <div class="flex justify-around p-2 h-full select-none">
-                  <div class="flex flex-col justify-center">
-                    <p class="text-sm font-bold">Trivia Apps</p>
-                    <p class="text-xs">
-                      Simple trivia apps created with ReactJS for library events
-                    </p>
-                  </div>
-                  <div class="flex items-center">
-                    <span>&#10095;</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Project One Info [Modal Window] -->
-            <div
-              id="projectModalTwo"
-              class="hidden absolute max-h-full w-4/5 overflow-y-auto bg-scroll z-10"
-            >
-              <!-- Container -->
-              <div class="bg-gray-200 p-4 rounded-lg mx-auto space-y-2">
-                <!-- Close button/Symbol -->
-                <span
-                  id="closeProjectModalTwo"
-                  class="cursor-pointer text-4xl hover:invert float-right"
-                  >&times;</span
-                >
-
-                <!-- Tech & Skills Contents -->
-                <h2
-                  class="text-stone-900 text-center text-4xl font-extrabold select-none"
-                >
-                  Trivia Apps
-                </h2>
-                <p class="text-center tracking-widest font-bold">[Finished]</p>
-                <p class="text-center italic font-extralight">
-                  2023-08; 2024-02 - 2024-03
-                </p>
-                <p class="text-center font-semibold">
-                  Tech stack used: ReactJS, Redux & Firebase
-                </p>
-                <p class="text-justify">
-                  Simple trivia applications created with ReactJS for hosted
-                  events at Vilnius municipal library. One variant is to
-                  commemorate Vilnius 700th birthday with 22 trivia questions
-                  and other variation was for a hosted Literature trivia game.
-                </p>
-                <br />
-                <h4 class="text-center font-semibold">Lessons Learned:</h4>
-                <ul>
-                  <li>ReactJS Development</li>
-                  <li>JavaScript DOM</li>
-                  <li>CSS Modules</li>
-                  <li>Redux</li>
-                  <li>Firebase Development</li>
-                  <li>Hosting Frontend applications with Netlify</li>
-                </ul>
-                <br />
-                <h4 class="text-center text-lg font-semibold">Links</h4>
-                <ul class="flex gap-4 flex-wrap justify-center">
-                  <li>
-                    <a
-                      href="https://vilnius-700-quiz-mv.netlify.app/"
-                      target="_blank"
-                      >Vilnius700 Quiz (Without Timer)</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://vilnius-700-quiz-mv-2.netlify.app/"
-                      target="_blank"
-                      >Vilnius700 Quiz (With Timer)</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://vcb-literaturine-viktorina.netlify.app/"
-                      target="_blank"
-                      >Literature Quiz</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/Emcrowz/Vilnius700-Quiz"
-                      target="_blank"
-                      >GitHub (Code)</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--  -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="/scripts/contentManager.js"></script>
+    <script src="/scripts/aboutModalManager.js"></script>
   </body>
 </html>

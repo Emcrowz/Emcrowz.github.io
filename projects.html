@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-hidden max-md:overflow-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/tailwindstyles.css" />
+    <title>Martynas Vrubliauskas | Projects</title>
+  </head>
+  <body>
+    <!-- Page Nav -->
+    <nav class="absolute right-0">
+      <!-- Page Nav Container -->
+      <div class="flex items-start justify-start space-x-2">
+        <a
+          href="index.html"
+          class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+          >[About Me]</a
+        >
+        <a
+          href="projects.html"
+          class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+          >[Projects]</a
+        >
+        <!-- <a
+          href="index.html"
+          id="langLt"
+          class="px-3 py-2 text-sm font-medium text-black hover:border-b-2 hover:border-slate-300/25 active:bg-slate-400/25 hover:text-white"
+          onclick="changeLanguage('lt')"
+          >[LT]</a
+        >
+        <a
+          href="index.html"
+          id="langEn"
+          class="px-3 py-2 text-sm font-medium text-black hover:border-b-2 hover:border-slate-300/25 active:bg-slate-400/25 hover:text-white hidden"
+          onclick="changeLanguage('en')"
+          >[EN]</a
+        > -->
+      </div>
+    </nav>
+
+    <!-- Project One Info [Modal Window] -->
+    <div
+      id="projectModalOne"
+      class="hidden fixed top-0 left-0 h-full w-full items-center justify-center overflow-y-auto bg-scroll bg-black/30 z-50"
+    >
+      <!-- Container -->
+      <div class="bg-gray-200 p-4 rounded-lg w-4/5">
+        <!-- Close button/Symbol -->
+        <span
+          id="closeProjectModalOne"
+          class="cursor-pointer text-4xl hover:invert float-right"
+          >&times;</span
+        >
+
+        <!-- Project Contents -->
+        <h2
+          class="text-stone-900 text-center text-4xl font-extrabold select-none"
+        >
+          Portfolio page
+        </h2>
+        <p class="text-center tracking-widest font-bold select-none">
+          [In-Development]
+        </p>
+        <p class="text-center italic font-extralight select-none">
+          2024-10; 2024-11
+        </p>
+        <p class="text-center font-semibold select-none">
+          Tech stack used: HTML/JavaScript + TailwindCSS
+        </p>
+        <p class="text-justify select-none">
+          A simple landing/portfolio page to showcase my development skills. Not
+          much to add to it, pretty much speaks for it self. Hosted with GitHub
+          pages.
+        </p>
+        <br />
+        <h4 class="text-center font-semibold select-none">Lessons Learned:</h4>
+        <ul>
+          <li class="select-none">General HTML</li>
+          <li class="select-none">JavaScript DOM</li>
+          <li class="select-none">TailwindCSS</li>
+        </ul>
+        <br />
+        <p class="italic select-none">
+          P.S.: Project will be redone on Blazor with Content Management CRUD
+          operations. Current version is simple static page.
+        </p>
+        <h4 class="text-center text-lg font-semibold select-none">Links</h4>
+        <ul class="flex justify-center">
+          <li>
+            <a
+              href="https://github.com/Emcrowz/Emcrowz.github.io"
+              target="_blank"
+              class="text-center text-green-700 underline hover:text-green-600/75 select-none"
+            >
+              GitHub (Code)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project Two Info [Modal Window] -->
+    <div
+      id="projectModalTwo"
+      class="hidden fixed top-0 left-0 h-full w-full items-center justify-center overflow-y-auto bg-scroll bg-black/30 z-50"
+    >
+      <!-- Container -->
+      <div class="bg-gray-200 p-4 rounded-lg w-4/5">
+        <!-- Close button/Symbol -->
+        <span
+          id="closeProjectModalTwo"
+          class="cursor-pointer text-4xl hover:invert float-right"
+          >&times;</span
+        >
+
+        <!-- Project Contents -->
+        <h2
+          class="text-stone-900 text-center text-4xl font-extrabold select-none"
+        >
+          Trivia Apps
+        </h2>
+        <p class="text-center tracking-widest font-bold select-none">
+          [Finished]
+        </p>
+        <p class="text-center italic font-extralight select-none">
+          2023-08; 2024-02 - 2024-03
+        </p>
+        <p class="text-center font-semibold select-none">
+          Tech stack used: ReactJS, Redux & Firebase
+        </p>
+        <p class="text-justify select-none">
+          Simple trivia applications created with ReactJS for hosted events at
+          Vilnius municipal library. One variant is to commemorate Vilnius 700th
+          birthday with 22 trivia questions and other variation was for a hosted
+          Literature trivia game.
+        </p>
+        <br />
+        <h4 class="text-center font-semibold select-none">Lessons Learned:</h4>
+        <ul>
+          <li class="select-none">ReactJS Development</li>
+          <li class="select-none">JavaScript DOM</li>
+          <li class="select-none">CSS Modules</li>
+          <li class="select-none">Redux</li>
+          <li class="select-none">Firebase Development</li>
+          <li class="select-none">
+            Hosting Frontend applications with Netlify
+          </li>
+        </ul>
+        <br />
+        <h4 class="text-center text-lg font-semibold select-none">Links</h4>
+        <ul class="flex gap-4 flex-wrap justify-center">
+          <li>
+            <a
+              href="https://vilnius-700-quiz-mv.netlify.app/"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >Vilnius700 Quiz (Without Timer)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://vilnius-700-quiz-mv-2.netlify.app/"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >Vilnius700 Quiz (With Timer)</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://vcb-literaturine-viktorina.netlify.app/"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >Literature Quiz</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/Emcrowz/Vilnius700-Quiz"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >GitHub (Code)</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project Three Info [Modal Window] -->
+    <div
+      id="projectModalThree"
+      class="hidden fixed top-0 left-0 h-full w-full items-center justify-center overflow-y-auto bg-scroll bg-black/30 z-50"
+    >
+      <!-- Container -->
+      <div class="bg-gray-200 p-4 rounded-lg w-4/5">
+        <!-- Close button/Symbol -->
+        <span
+          id="closeProjectModalThree"
+          class="cursor-pointer text-4xl hover:invert float-right"
+          >&times;</span
+        >
+
+        <!-- Project Contents -->
+        <h2
+          class="text-stone-900 text-center text-4xl font-extrabold select-none"
+        >
+          MOOC Learning platform project
+        </h2>
+        <p class="text-center tracking-widest font-bold select-none">
+          [In-Development]
+        </p>
+        <p class="text-center italic font-extralight select-none">
+          2024-11 - present
+        </p>
+        <p class="text-center font-semibold select-none">
+          Tech stack used: ASP.NET Core Web Api, MSSQL (Back-end) & Blazor
+          (Front-end)
+        </p>
+        <p class="text-justify select-none">
+          A Full-stack project to implement a MOOC type learning platform
+          similar to udemy and Coursera.
+        </p>
+        <br />
+        <h4 class="text-center font-semibold select-none">Lessons Learned:</h4>
+        <ul>
+          <li class="select-none">ASP.NET Stack Development</li>
+          <li class="select-none">
+            Back-end API Development with ASP.NET Core
+          </li>
+          <li class="select-none">Front-end Development with Blazor</li>
+          <li class="select-none">Tailwind CSS Styling and UI Design</li>
+          <li class="select-none">
+            Relational Database development with MSSQL
+          </li>
+          <li class="select-none">ORM uses: Entity Framework Core</li>
+          <li class="select-none">Docker Containerization and Orchestration</li>
+          <li class="select-none">
+            Unit testing APIs, Back-end and Front-end using xUnit, NSubstitute
+          </li>
+          <li class="select-none">Monitoring and Logging with Serilog</li>
+        </ul>
+        <br />
+        <p class="italic select-none">
+          P.S.: Project is actively being worked on free time. Not all features
+          are currently present such as UI and most of the API endpoints.
+        </p>
+        <h4 class="text-center text-lg font-semibold select-none">Links</h4>
+        <ul class="flex gap-4 flex-wrap justify-center">
+          <li>
+            <a
+              href="https://github.com/Emcrowz/OnlineLearingPlatform-Fullstack"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >GitHub (Code)</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project Four Info [Modal Window] -->
+    <div
+      id="projectModalFour"
+      class="hidden fixed top-0 left-0 h-full w-full items-center justify-center overflow-y-auto bg-scroll bg-black/30 z-50"
+    >
+      <!-- Container -->
+      <div class="bg-gray-200 p-4 rounded-lg w-4/5">
+        <!-- Close button/Symbol -->
+        <span
+          id="closeProjectModalFour"
+          class="cursor-pointer text-4xl hover:invert float-right"
+          >&times;</span
+        >
+
+        <!-- Project Contents -->
+        <h2
+          class="text-stone-900 text-center text-4xl font-extrabold select-none"
+        >
+          Billboard Listing Service
+        </h2>
+        <p class="text-center tracking-widest font-bold select-none">
+          [Finished; To be updated]
+        </p>
+        <p class="text-center italic font-extralight select-none">
+          2024-06 - 2024-07; present
+        </p>
+        <p class="text-center font-semibold select-none">
+          Tech stack used: ASP.NET Core Web Api, MSSQL (Back-end), MongoDB
+        </p>
+        <p class="text-justify select-none">
+          A Back-end project created as a final project at Vilnius Coding School
+          training. Emulates the simple back-end of billboarding listing
+          application.
+        </p>
+        <br />
+        <h4 class="text-center font-semibold select-none">Lessons Learned:</h4>
+        <ul>
+          <li class="select-none">ASP.NET Stack Development</li>
+          <li class="select-none">
+            Back-end API Development with ASP.NET Core
+          </li>
+          <li class="select-none">
+            Relational Database development with MSSQL
+          </li>
+          <li class="select-none">NoSQL Database development with MongoDB</li>
+          <li class="select-none">ORM uses: Entity Framework Core</li>
+          <li class="select-none">
+            Unit testing APIs, Back-end using xUnit, Moq
+          </li>
+          <li class="select-none">Monitoring and Logging with Serilog</li>
+        </ul>
+        <br />
+        <p class="italic select-none">
+          P.S.: Project will be updated to include a UI.
+        </p>
+        <h4 class="text-center text-lg font-semibold select-none">Links</h4>
+        <ul class="flex gap-4 flex-wrap justify-center">
+          <li>
+            <a
+              href="https://github.com/Emcrowz/Billboard-Application"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >GitHub (Code)</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Project Five Info [Modal Window] -->
+    <div
+      id="projectModalFive"
+      class="hidden fixed top-0 left-0 h-full w-full items-center justify-center overflow-y-auto bg-scroll bg-black/30 z-50"
+    >
+      <!-- Container -->
+      <div class="bg-gray-200 p-4 rounded-lg w-4/5">
+        <!-- Close button/Symbol -->
+        <span
+          id="closeProjectModalFive"
+          class="cursor-pointer text-4xl hover:invert float-right"
+          >&times;</span
+        >
+
+        <!-- Project Contents -->
+        <h2
+          class="text-stone-900 text-center text-4xl font-extrabold select-none"
+        >
+          Homeservice Application
+        </h2>
+        <p class="text-center tracking-widest font-bold select-none">
+          [Finished; To be updated]
+        </p>
+        <p class="text-center italic font-extralight select-none">
+          2024-08 - 2024-09; present
+        </p>
+        <p class="text-center font-semibold select-none">
+          Tech stack used: ReactJS, NodeJS, TypeScript, MongoDB
+        </p>
+        <p class="text-justify select-none">
+          A Front-end focused application for business that works with various
+          home maintenance services. A final project of IamJunior training.
+        </p>
+        <br />
+        <h4 class="text-center font-semibold select-none">Lessons Learned:</h4>
+        <ul>
+          <li class="select-none">Front-end Development</li>
+          <li class="select-none">ReactJS Development with TypeScript</li>
+          <li class="select-none">Back-end Developments with TypeScript</li>
+          <li class="select-none">NoSQL Database development with MongoDB</li>
+          <li class="select-none">Unit testing APIs, Front-end using Jest</li>
+        </ul>
+        <br />
+        <p class="italic select-none">
+          P.S.: Project will be updated to be containerized, UI element polish
+          and deployed
+        </p>
+        <h4 class="text-center text-lg font-semibold select-none">Links</h4>
+        <ul class="flex gap-4 flex-wrap justify-center">
+          <li>
+            <a
+              href="https://github.com/Emcrowz/homeserviceapp"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >GitHub (Code)</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--  -->
+
+    <!-- Projects & Work Showcase -->
+    <div
+      class="bg-gradient-to-bl from-teal-300/90 to-teal-800/75 flex justify-center min-h-screen"
+      id="projects"
+    >
+      <!-- Projects Container -->
+      <div class="container mt-14">
+        <div class="bg-slate-600/20 p-4 shadow-lg mx-auto">
+          <!-- Projects Title -->
+          <h2
+            class="text-stone-900 text-center text-4xl font-extrabold select-none"
+          >
+            Work and projects
+          </h2>
+          <!-- Projects Nav/Filter -->
+          <nav class="flex justify-center my-6 border-y-2 border-slate-800/30">
+            <ul class="flex space-x-4 my-2">
+              <li
+                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+              >
+                <a href="#all">All</a>
+              </li>
+              <li
+                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+              >
+                <a href="#web">Web (ASP.NET / JavaScript)</a>
+              </li>
+              <li
+                class="px-3 py-2 text-lg font-medium text-black hover:border-b-2 hover:border-green-700/75 active:bg-slate-500/25 hover:text-white select-none"
+              >
+                <a href="#uiux">UI/UX</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Projects Content -->
+          <!-- Container -->
+          <div class="flex flex-wrap gap-4 justify-evenly">
+            <!-- Content -->
+
+            <!-- Image(s) -->
+            <div class="relative group" data-id="web">
+              <img
+                src="/assets/img/projects/PortfolioShowcasePicture.png"
+                alt="protfolio-page"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalOne"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">Portfolio page</p>
+                    <p class="text-xs">
+                      A portfolio static page hosted via GitHub pages
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="relative group" data-id="web">
+              <img
+                src="/assets/img/projects/ProjectLiteratureTrivia04.png"
+                alt="trivia-app"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalTwo"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">Trivia Apps</p>
+                    <p class="text-xs">
+                      Simple trivia apps created with ReactJS for library events
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="relative group" data-id="web">
+              <img
+                src="/assets/img/placeholder/placeholder.svg"
+                alt="placeholder"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalThree"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">MOOC Platform Project</p>
+                    <p class="text-xs">
+                      A Full-stack project to emulate a online learning platform
+                      like udemy, Coursera
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="relative group" data-id="web">
+              <img
+                src="/assets/img/placeholder/placeholder.svg"
+                alt="placeholder"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalFour"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">Billboard Listing Service</p>
+                    <p class="text-xs">
+                      A Back-end final project accomplished during the training
+                      at Vilnius Coding School
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="relative group" data-id="web">
+              <img
+                src="/assets/img/placeholder/placeholder.svg"
+                alt="placeholder"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalFive"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">
+                      IamJunior JavaScript final project
+                    </p>
+                    <p class="text-xs">
+                      A Front-end final project accomplished during the training
+                      at IamJunior
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/scripts/projectsModalManager.js"></script>
+    <script src="/scripts/workAndProjectsFilter.js"></script>
+  </body>
+</html>
