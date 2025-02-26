@@ -58,6 +58,18 @@ btnCloseProjectFive.onclick = function () {
   projectModalFive.style.display = "none";
 };
 
+var projectModalSix = document.getElementById("projectModalSix");
+var btnProjectModalSix = document.getElementById("btnProjectModalSix");
+var btnCloseProjectSix = document.getElementById("closeProjectModalSix");
+
+btnProjectModalSix.onclick = function () {
+  projectModalSix.style.display = "flex";
+};
+
+btnCloseProjectSix.onclick = function () {
+  projectModalSix.style.display = "none";
+};
+
 window.onclick = function (e) {
   if (e.target == projectModalOne) {
     projectModalOne.style.display = "none";
@@ -77,5 +89,9 @@ window.onclick = function (e) {
 
   if (e.target == projectModalFive) {
     projectModalFive.style.display = "none";
+  }
+
+  if (e.target == projectModalSix) {
+    projectModalSix.style.display = "none";
   }
 };

@@ -151,15 +151,7 @@
         <ul class="flex gap-4 flex-wrap justify-center">
           <li>
             <a
-              href="https://vilnius-700-quiz-mv.netlify.app/"
-              target="_blank"
-              class="text-green-700 underline hover:text-green-600/75 select-none"
-              >Vilnius700 Quiz (Without Timer)</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://vilnius-700-quiz-mv-2.netlify.app/"
+              href="https://vilnius700-quiz.netlify.app/"
               target="_blank"
               class="text-green-700 underline hover:text-green-600/75 select-none"
               >Vilnius700 Quiz (With Timer)</a
@@ -167,10 +159,10 @@
           </li>
           <li>
             <a
-              href="https://vcb-literaturine-viktorina.netlify.app/"
+              href="https://vilnius700-quiz-2.netlify.app/"
               target="_blank"
               class="text-green-700 underline hover:text-green-600/75 select-none"
-              >Literature Quiz</a
+              >Vilnius700 Quiz (Without Timer)</a
             >
           </li>
           <li>
@@ -386,6 +378,70 @@
         </ul>
       </div>
     </div>
+
+    <!-- Project Six Info [Modal Window] -->
+    <div
+      id="projectModalSix"
+      class="hidden fixed top-0 left-0 h-full w-full items-center justify-center overflow-y-auto bg-scroll bg-black/30 z-50"
+    >
+      <!-- Container -->
+      <div class="bg-gray-200 p-4 rounded-lg w-4/5">
+        <!-- Close button/Symbol -->
+        <span
+          id="closeProjectModalSix"
+          class="cursor-pointer text-4xl hover:invert float-right"
+          >&times;</span
+        >
+
+        <!-- Project Contents -->
+        <h2
+          class="text-stone-900 text-center text-4xl font-extrabold select-none"
+        >
+          Quiz Application
+        </h2>
+        <p class="text-center tracking-widest font-bold select-none">
+          [Finished; To be updated]
+        </p>
+        <p class="text-center italic font-extralight select-none">
+          2025-01; present
+        </p>
+        <p class="text-center font-semibold select-none">
+          Tech stack used: .NET, ASP.NET Core, ReactJS, NodeJS, TypeScript,
+          SQLite
+        </p>
+        <p class="text-justify select-none">
+          A full-stack application quiz implementation with multiple, different
+          types of question choises and score calculation.
+        </p>
+        <br />
+        <h4 class="text-center font-semibold select-none">Lessons Learned:</h4>
+        <ul>
+          <li class="select-none">Full-stact Development</li>
+          <li class="select-none">.NET Development for the back-end</li>
+          <li class="select-none">
+            ReactJS Development with TypeScript for the front-end
+          </li>
+          <li class="select-none">SQLite Database development</li>
+          <li class="select-none">Unit testing APIs with xUnit</li>
+        </ul>
+        <br />
+        <p class="italic select-none">
+          P.S.: Project will be updated to be containerized, UI element polish
+          and deployed
+        </p>
+        <h4 class="text-center text-lg font-semibold select-none">Links</h4>
+        <ul class="flex gap-4 flex-wrap justify-center">
+          <li>
+            <a
+              href="https://github.com/Emcrowz/QuizApplication"
+              target="_blank"
+              class="text-green-700 underline hover:text-green-600/75 select-none"
+              >GitHub (Code)</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <!--  -->
 
     <!-- Projects & Work Showcase -->
@@ -548,6 +604,32 @@
                     <p class="text-xs">
                       A Front-end final project accomplished during the training
                       at IamJunior
+                    </p>
+                  </div>
+                  <div class="flex items-center">
+                    <span>&#10095;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="relative group" data-id="web">
+              <img
+                src="/assets/img/placeholder/placeholder.svg"
+                alt="placeholder"
+                class="max-w-64 max-h-44"
+              />
+              <div
+                id="btnProjectModalSix"
+                class="absolute top-0 bottom-0 right-0 left-0 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40 cursor-pointer"
+              >
+                <div class="flex justify-around p-2 h-full select-none">
+                  <div class="flex flex-col justify-center">
+                    <p class="text-sm font-bold">Full Stack Quiz Application</p>
+                    <p class="text-xs">
+                      A full stack web quiz application utilising .NET and React
+                      JS with TypeScript.
                     </p>
                   </div>
                   <div class="flex items-center">
