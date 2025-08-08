@@ -2,7 +2,7 @@
 
 ## Theme / Core idea
 
-A portfolio page customised using TailwindCSS.
+A static portfolio page customised using TailwindCSS and stored in the named GitHub profile repository.
 
 ## Tech Stack
 
@@ -10,10 +10,8 @@ A portfolio page customised using TailwindCSS.
 
 ## Roadmap
 
-- ~~Refactor old page and relplace with new version utilising TailwindCSS (Finished: 2024-10)~~
-- Fix the responsive design layout. On mobile phones doesn't look as good than on the widescreens. [ Doing ]
-- Clean code and refactor to make code cleaner [ Upcoming ]
-- Transfer static page to the Blazor app
+- Fix the responsive design layout. On mobile phones doesn't look as good than on the widescreens. [ To do ]
+- Clean code and refactor to make code cleaner [ To do ]
 
 ## Lessons Learned
 
@@ -23,8 +21,8 @@ A portfolio page customised using TailwindCSS.
 
 ## Appendix
 
-P.S.: Project will be redone on Blazor with Content Management CRUD operations. Current version is simple static page.
+Just a simple static page that acts as a landing for the profile information of sorts.
 
 ## Authors
 
-- Martynas Vrubliauskas [@emcrowz](https://www.github.com/emcrowz)
+- Martynas Vrubliauskas [@Emcrowz](https://www.github.com/emcrowz)
